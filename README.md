@@ -1,7 +1,7 @@
 # Portfolio: setup and mobile version skeleton
 
 ![Alt text](images/portfolio.png?raw=true "Optional Title")
-
+portfolio
 ## Learning objectives
 - Understand how to parse a Figma design to create a UI.
 - Flexbox to place elements in the page.
