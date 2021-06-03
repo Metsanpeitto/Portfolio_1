@@ -20,6 +20,8 @@ If you want a copy of this file go to the github repository and download it
 
 `git clone https://github.com/Metsanpeitto/Portfolio_1`
 
+After cloning it you can see the project opening the index.html file with your favorite browser ( Firefox for example )
+
 
 ### Prerequisites
 

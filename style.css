@@ -7,14 +7,8 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: gray;
-  margin-left: 33vw;
-  margin-top: 3%;
-}
-
 body {
-  width: 462px;
+  width: 375px;
   height: 718px;
   background: rgba(255, 255, 255, 1);
   border-radius: 0 0 0 100px;
@@ -32,8 +26,6 @@ header {
   padding: 24px;
   position: absolute;
   top: 20px;
-  left: 34px;
-  margin: 12px;
   z-index: 1;
 }
 
@@ -47,14 +39,18 @@ header {
   font-size: 18px;
   opacity: 1;
   text-align: center;
+  text-decoration: none;
+}
+
+nav {
+  position: absolute;
+  top: -5px;
+  right: 20px;
 }
 
 .menu {
   width: 48px;
   height: 48px;
-  position: absolute;
-  top: 10px;
-  right: 20px;
 }
 
 .menu:hover {
@@ -62,17 +58,13 @@ header {
 }
 
 main {
+  display: flex;
   width: 375px;
   height: 604px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   padding: 114px 24px;
-  margin: 12px;
   opacity: 1;
   position: absolute;
   top: 40px;
-  left: 34px;
   overflow: hidden;
 }
 
@@ -80,32 +72,35 @@ main {
   width: 327px;
   color: rgba(23, 43, 77, 1);
   position: absolute;
-  top: 114px;
+  top: 90px;
   left: 24px;
   font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 40px;
-  line-height: 44px;
+  line-height: 52px;
   opacity: 1;
   text-align: left;
 }
 
 p {
   width: 327px;
+  background-color: white;
   color: rgba(52, 69, 99, 1);
   position: absolute;
-  top: 276px;
+  top: 318px;
   left: 24px;
+  line-height: 24px;
   font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 400;
   font-size: 16px;
   opacity: 1;
   text-align: left;
+  z-index: 1;
 }
 
 .social {
   position: absolute;
-  top: 470px;
+  top: 490px;
   left: 24px;
   width: 300px;
   overflow: hidden;
@@ -128,6 +123,11 @@ p {
   overflow: hidden;
 }
 
+ul {
+  display: contents;
+  list-style-type: none;
+}
+
 .social-text {
   width: 150px;
   margin-bottom: 20px;
@@ -136,7 +136,7 @@ p {
   top: -40px;
   left: 0;
   font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   opacity: 1;
   text-align: left;
@@ -152,6 +152,8 @@ p {
 }
 
 .e-3 {
+  background-image: url("./images/Ellipse-3.png");
+  background-repeat: no-repeat;
   position: absolute;
   right: -45px;
   top: 82px;
@@ -159,15 +161,31 @@ p {
   height: 100px;
 }
 
-.r-6 {
+.e-8 {
+  background-image: url(./images/Ellipse-8.png);
+  background-repeat: no-repeat;
   position: absolute;
-  right: 0;
-  top: 63px;
-  width: 96px;
-  height: 70px;
+  left: 246px;
+  top: 40px;
+  width: 15px;
+  height: 15px;
+}
+
+.r-6 {
+  background-image: url(./images/Rectangle-6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: -8px;
+  top: 40px;
+  width: 76px;
+  height: 80px;
+  transform: rotate(10deg);
 }
 
 .e-11 {
+  background-image: url("./images/Ellipse-11.png");
+  background-repeat: no-repeat;
   position: absolute;
   left: -20px;
   top: 63px;
@@ -176,6 +194,8 @@ p {
 }
 
 .e-5 {
+  background-image: url("./images/Ellipse-5.png");
+  background-repeat: no-repeat;
   position: absolute;
   left: 90px;
   top: 105px;
@@ -183,7 +203,20 @@ p {
   height: 26px;
 }
 
+.r-5 {
+  background-image: url(./images/Rectangle-6.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 230px;
+  top: 575px;
+  width: 68px;
+  height: 55px;
+  transform: rotate(65deg);
+}
+
 .r-7 {
+  background-image: url("./images/Rectangle-7.png");
+  background-repeat: no-repeat;
   position: absolute;
   left: 95px;
   top: 95px;
@@ -192,6 +225,38 @@ p {
 }
 
 .e-8-b {
+  background-image: url("./images/Ellipse-8.png");
+  background-repeat: no-repeat;
   position: absolute;
   top: 580px;
+  left: 46px;
+  width: 15px;
+  height: 15px;
+}
+
+.e-4 {
+  background-image: url(./images/Ellipse-4.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 275px;
+  top: 570px;
+  width: 20px;
+  height: 20px;
+}
+
+.e-13 {
+  left: 310px;
+  top: 487px;
+  width: 30px;
+  height: 30px;
+}
+
+.e-4-b {
+  background-image: url(./images/Ellipse-4.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 32px;
+  top: 470px;
+  width: 20px;
+  height: 20px;
 }
