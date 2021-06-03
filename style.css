@@ -8,26 +8,26 @@
 }
 
 html {
-      background-color: gray;
-    margin-left: 33vw;
-    margin-top: 3%;
+  background-color: gray;
+  margin-left: 33vw;
+  margin-top: 3%;
 }
 
 body {
   width: 462px;
   height: 718px;
   background: rgba(255, 255, 255, 1);
-  border-radius: 0px 0px 0px 100px;
+  border-radius: 0 0 0 100px;
   opacity: 1;
   position: relative;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   overflow: hidden;
 }
 
 header {
   display: flex;
-  cursor: pointer;  
+  cursor: pointer;
   width: 375px;
   padding: 24px;
   position: absolute;
@@ -42,7 +42,7 @@ header {
   color: #6070ff;
   position: absolute;
   top: 5px;
-  font-family: "Poppins";
+  font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 18px;
   opacity: 1;
@@ -82,10 +82,10 @@ main {
   position: absolute;
   top: 114px;
   left: 24px;
-  font-family: Poppins;
-  font-weight: Bold;
+  font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: bold;
   font-size: 40px;
-  line-height: 44px;  
+  line-height: 44px;
   opacity: 1;
   text-align: left;
 }
@@ -96,8 +96,8 @@ p {
   position: absolute;
   top: 276px;
   left: 24px;
-  font-family: Poppins;
-  font-weight: Regular;
+  font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   opacity: 1;
   text-align: left;
@@ -112,20 +112,20 @@ p {
 }
 
 .social-icons {
-    align-items: center;
-    display: flex;
-    width: 200px;
-    height: 40px;
-    background: url(../images/v1_336.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    padding: 5px;    
-    position: absolute;
-    top: 35px;
-    left: 2px;
-    overflow: hidden;    
+  align-items: center;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  background: url(../images/v1_336.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  padding: 5px;
+  position: absolute;
+  top: 35px;
+  left: 2px;
+  overflow: hidden;
 }
 
 .social-text {
@@ -134,9 +134,9 @@ p {
   color: rgba(127, 140, 255, 1);
   position: relative;
   top: -40px;
-  left: 0px;
-  font-family: Poppins;
-  font-weight: Medium;
+  left: 0;
+  font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 700;
   font-size: 16px;
   opacity: 1;
   text-align: left;
@@ -161,7 +161,7 @@ p {
 
 .r-6 {
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 63px;
   width: 96px;
   height: 70px;
