@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+      background-color: gray;
+    margin-left: 33vw;
+    margin-top: 3%;
+}
+
+body {
+  width: 462px;
+  height: 718px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 0px 0px 0px 100px;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  cursor: pointer;  
+  width: 375px;
+  padding: 24px;
+  position: absolute;
+  top: 20px;
+  left: 34px;
+  margin: 12px;
+  z-index: 1;
+}
+
+.logo-text {
+  width: 76px;
+  color: #6070ff;
+  position: absolute;
+  top: 5px;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 1;
+  text-align: center;
+}
+
+.menu {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.menu:hover {
+  transform: scale(1.2);
+}
+
+main {
+  width: 375px;
+  height: 604px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 114px 24px;
+  margin: 12px;
+  opacity: 1;
+  position: absolute;
+  top: 40px;
+  left: 34px;
+  overflow: hidden;
+}
+
+.header-text {
+  width: 327px;
+  color: rgba(23, 43, 77, 1);
+  position: absolute;
+  top: 114px;
+  left: 24px;
+  font-family: Poppins;
+  font-weight: Bold;
+  font-size: 40px;
+  line-height: 44px;  
+  opacity: 1;
+  text-align: left;
+}
+
+p {
+  width: 327px;
+  color: rgba(52, 69, 99, 1);
+  position: absolute;
+  top: 276px;
+  left: 24px;
+  font-family: Poppins;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.social {
+  position: absolute;
+  top: 470px;
+  left: 24px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.social-icons {
+    align-items: center;
+    display: flex;
+    width: 200px;
+    height: 40px;
+    background: url(../images/v1_336.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    padding: 5px;    
+    position: absolute;
+    top: 35px;
+    left: 2px;
+    overflow: hidden;    
+}
+
+.social-text {
+  width: 150px;
+  margin-bottom: 20px;
+  color: rgba(127, 140, 255, 1);
+  position: relative;
+  top: -40px;
+  left: 0px;
+  font-family: Poppins;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.icon {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.e-3 {
+  position: absolute;
+  right: -45px;
+  top: 82px;
+  width: 100px;
+  height: 100px;
+}
+
+.r-6 {
+  position: absolute;
+  right: 0px;
+  top: 63px;
+  width: 96px;
+  height: 70px;
+}
+
+.e-11 {
+  position: absolute;
+  left: -20px;
+  top: 63px;
+  width: 45px;
+  height: 70px;
+}
+
+.e-5 {
+  position: absolute;
+  left: 90px;
+  top: 105px;
+  width: 30px;
+  height: 26px;
+}
+
+.r-7 {
+  position: absolute;
+  left: 95px;
+  top: 95px;
+  width: 30px;
+  height: 26px;
+}
+
+.e-8-b {
+  position: absolute;
+  top: 580px;
+}
