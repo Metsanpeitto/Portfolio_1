@@ -1,7 +1,7 @@
 {
   "name": "portfolio_1",
   "version": "1.0.0",
-  "description": "",
+  "description": "![Alt text](images/screenshot.png?raw=true \"Optional Title\")",
   "main": "index.js",
   "dependencies": {
     "hint": "^6.1.3",

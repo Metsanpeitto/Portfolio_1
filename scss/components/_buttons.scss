@@ -47,3 +47,25 @@
     }
   }
 }
+
+
+.c-b-light-button {
+    width: 162px;
+    height: 48px;
+    background: url(../images/v1_124.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 12px 12px;
+    margin: 12px;
+    opacity: 1;
+    position: absolute;
+    top: 490px;
+    left: 36px;
+    border: 1px solid $blue-5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}

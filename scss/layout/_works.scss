@@ -13,6 +13,7 @@
     overflow: hidden;
 
     .box {
+      display: flex;
       width: 327px;
       height: 552px;
       background: $white;
