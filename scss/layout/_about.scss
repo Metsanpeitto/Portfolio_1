@@ -1,23 +1,56 @@
+.l-about {
+  display: grid;
+  grid-template-rows: repeat(4, 596px);
+  grid-row-gap: 80px;
+  width: 375px;
+  height: 2788px;
+  background-color: transparent;
+  padding: unset;
+  margin: auto;
+  opacity: 1;
+  position: relative;
+  overflow: hidden; 
+  border-top-right-radius: 64px;
 
-
- 
-  .l-about {
-    display: grid;
-    grid-template-rows: repeat(4, 596px);
-    grid-row-gap: 80px;
+  .about-box {
+    height: 1125.146728515625px;
     width: 375px;
-    height: 2788px;
-    background-color: transparent;
-    padding: unset;
+    padding: 24px 24px;
     margin: auto;
-    opacity: 1;
-    position: relative;
-    overflow: hidden;    
+    top: 3506px;
+    border-radius: 0px;
+    padding: 114px, 24px, 114px, 24px;
   }
 
+      .about-box-top {
+      .top-title {
+        width: 327px;
+        color: rgba(23, 43, 77, 1);
+        position: absolute;
+        top: 0px;
+        left: 48px;
+        font-family: Poppins;
+        font-weight: Bold;
+        font-size: 40px;
+        opacity: 1;
+        text-align: left;
+      }
 
+      .top-parraf {
+        width: 327px;
+        color: rgba(52, 69, 99, 1);
+        position: absolute;
+        top: 113px;
+        left: 48px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 16px;
+        opacity: 1;
+        text-align: left;
+      }
+    }
+}
 
-  
 /*************************************************************************/
 
 .v1_87 {

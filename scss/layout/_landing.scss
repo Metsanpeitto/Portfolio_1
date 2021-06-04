@@ -2,8 +2,9 @@
     position: static;
     display: grid;
     width: 375px;
-    height: max-content;
+    height: 718px;
     grid-row-start: 1;
+    border-bottom-left-radius: 64px;
 }
 
 header {
@@ -50,13 +51,14 @@ nav {
   color: rgba(23, 43, 77, 1);
   position: relative;
   top: 90px;
-  left: 24px;
   font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   opacity: 1;
   text-align: left;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .header-parraf {
@@ -81,6 +83,7 @@ nav {
   left: 24px;
   width: 300px;
   overflow: hidden;
+  z-index: 3;
 }
 
 .social-icons {
@@ -94,7 +97,7 @@ nav {
   background-size: cover;
   opacity: 1;
   padding: 5px;
-  position: relative;
+  position: absolute;
   top: 35px;
   left: 2px;
   overflow: hidden;
