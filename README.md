@@ -61,10 +61,14 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 
+
 =======
 
 
 ## Acknowledgments
 
 - Microverse for giving me this chance
-- The amazing code reviewers for making me improve every day
+- The amazing code reviewers for making me improve every day :thumbsup:
+
+
+
