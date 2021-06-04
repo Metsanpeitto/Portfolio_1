@@ -1,0 +1,333 @@
+/* -----------------------------------------------------------------------------------
+
+    Template Name: Portfolio
+    Description: This is a portfolio project. Built for Microverse.
+    Author: Abraham Rodriguez ( Abi )
+    Author URI: https://portfolio.waldenberginc.com
+
+-----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+   Folder Architecture
+
+   1._style
+   |
+   |
+   |
+   |___1.1 abstract
+   |              |
+   |              |
+   |              |___1.1.1 variables
+   |
+   |
+   |___1.2 base
+   |           |
+   |           |
+   |           |___1.2.1 animations
+   |
+   |
+   |___1.3 components
+                    |
+                    |
+                    |___1.3.1 buttons
+*/
+@keyframes rise {
+  0% {
+    top: 100vh;
+  }
+
+  100% {
+    top: 0.000001vh;
+  }
+}
+
+.normal-button {
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  opacity: 1;
+  top: 216px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  position: absolute;
+  width: 124px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  transition: all 0.9s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.normal-button .link {
+  width: 100px;
+  color: #386df2;
+  opacity: 1;
+  height: 24px;
+  left: 12px;
+  top: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.normal-button:hover {
+  border: 3px solid #6070ff;
+}
+
+.normal-button:hover .link {
+  font-size: 19px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  width: 375px;
+  height: 2788px;
+  background: url("../images/v1_162.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 114px 24px;
+  margin: 88px;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.box {
+  width: 327px;
+  height: 552px;
+  background: #fff;
+  padding: 16px 16px;
+  margin: 12px;
+  opacity: 1;
+  position: relative;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  overflow: hidden;
+  animation: rise 0.9s ease-in-out;
+}
+
+.box__img {
+  width: 295px;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  overflow: hidden;
+}
+
+.box__text {
+  width: 295px;
+  height: 288px;
+  background: url("../images/v1_165.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 248px;
+  left: 16px;
+  overflow: hidden;
+}
+
+.box .text {
+  width: 295px;
+  height: 80px;
+  background: url("../images/v1_166.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.box .text__title {
+  width: 295px;
+  color: #172b4d;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+
+.box .text__breadcrumb {
+  align-items: center;
+  height: 32px;
+  background: url("../images/v1_168.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  opacity: 1;
+  position: absolute;
+  top: 48px;
+  overflow: hidden;
+}
+
+.box .text__breadcrumb .breadcrumb-1 {
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  min-width: max-content;
+  margin-right: 12px;
+  height: 32px;
+  background: url(../images/v1_169.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 8px;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.box .text__breadcrumb .breadcrumb {
+  align-items: center;
+  width: fit-content;
+  height: 32px;
+  background: url(../images/v1_172.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  padding: 8px;
+  opacity: 1;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.box .text__breadcrumb .breadcrumb .breadcrumb-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #c1c7d0;
+}
+
+.box .text__breadcrumb .breadcrumb .breadcrumb-text-1 {
+  width: 56px;
+  height: 32px;
+}
+
+.box .text__breadcrumb .dot {
+  width: 8px;
+  height: 8px;
+  background: #c1c7d0;
+  opacity: 1;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.box__parraf {
+  width: 295px;
+  color: #344563;
+  position: absolute;
+  top: 92px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+
+.box__bubbles {
+  display: flex;
+  height: 24px;
+  background: url(../images/v1_178.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 180px;
+  overflow: hidden;
+}
+
+.box__bubbles .bubble {
+  min-width: max-content;
+  height: 24px;
+  background: #ebebff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 4px 12px;
+  opacity: 1;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.box__bubbles .bubble .bubble-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.image-1 {
+  background: url("../images/v1_164.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.image-2 {
+  background: url("../images/v1_189.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.image-3 {
+  background: url("../images/v1_214.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.image-4 {
+  background: url("../images/v1_239.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
