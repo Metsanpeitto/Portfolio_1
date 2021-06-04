@@ -46,15 +46,13 @@ body {
 
 main {
   display: grid;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(4, 596px);
+  grid-row-gap: 80px;
   width: 375px;
   height: 2788px;
-  background: url("../images/v1_162.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding: 114px 24px;
-  margin: 88px;
+  background-color: transparent;
+  padding: unset;
+  margin: auto;
   opacity: 1;
   position: relative;
   overflow: hidden;
@@ -65,7 +63,9 @@ main {
   height: 552px;
   background: $white;
   padding: 16px 16px;
-  margin: 12px;
+  margin: auto;
+  margin-top: unset;
+  margin-bottom: 80px;
   opacity: 1;
   position: relative;
   border-top-left-radius: 16px;
@@ -99,6 +99,8 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    display: grid;
+    grid-row-gap: 12px;
     opacity: 1;
     position: absolute;
     top: 248px;
@@ -122,10 +124,12 @@ main {
       color: $blue-1;
       position: relative;
       font-family: "Poppins", sans-serif;
-      font-weight: 500;
+      font-weight: 700;
       font-size: 32px;
       opacity: 1;
       text-align: left;
+      margin-block-start: unset;
+      margin-block-end: unset;
     }
 
     &__breadcrumb {
@@ -157,6 +161,8 @@ main {
         background-position: center center;
         background-size: cover;
         padding: 8px;
+        padding-left: unset;
+        padding-right: unset;
         opacity: 1;
         overflow: hidden;
       }
@@ -182,6 +188,7 @@ main {
           font-size: 13px;
           line-height: 16px;
           color: $blue-3;
+          width: max-content;
         }
 
         .breadcrumb-text-1 {
@@ -204,8 +211,6 @@ main {
   &__parraf {
     width: 295px;
     color: $blue-2;
-    position: absolute;
-    top: 92px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -221,8 +226,6 @@ main {
     background-position: center center;
     background-size: cover;
     opacity: 1;
-    position: absolute;
-    top: 180px;
     overflow: hidden;
 
     .bubble {
@@ -248,6 +251,16 @@ main {
         color: $blue-4;
       }
     }
+  }
+
+  &__action {
+    width: 295px;
+    height: 72px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    padding: 12px;
+    padding-left: unset;
   }
 }
 

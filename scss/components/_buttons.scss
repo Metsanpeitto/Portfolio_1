@@ -17,7 +17,7 @@
   transition: all 0.9s cubic-bezier(0.86, 0, 0.07, 1);
 
   .link {
-    width: 100px;
+    width: max-content;
     color: $blue-5;
     opacity: 1;
     height: 24px;
