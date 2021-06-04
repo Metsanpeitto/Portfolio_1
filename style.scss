@@ -60,7 +60,7 @@ body {
 
 main {
   display: grid;
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
   overflow-y: hidden;
   position: absolute; 
   animation: rise 0.9s ease-in-out;

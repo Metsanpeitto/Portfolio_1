@@ -48,6 +48,7 @@
     top: 0.000001vh; } }
 
 .c-b-normal-button {
+  min-width: max-content;
   border-radius: 8px;
   background: white;
   cursor: pointer;
@@ -90,26 +91,6 @@
       font-size: 18px;
       transform: translateX(-5px); }
 
-.c-b-light-button {
-  width: 162px;
-  height: 48px;
-  background: url(../images/v1_124.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding: 12px 12px;
-  margin: 12px;
-  opacity: 1;
-  position: absolute;
-  top: 490px;
-  left: 36px;
-  border: 1px solid #386df2;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  overflow: hidden; }
-
 .l-about {
   display: grid;
   grid-template-rows: repeat(4, 596px);
@@ -132,95 +113,147 @@
     top: 3506px;
     border-radius: 0px;
     padding: 114px, 24px, 114px, 24px; }
-  .l-about .about-box-top .top-title {
-    display: flex;
-    width: 50%;
-    height: 100px;
-    color: #172b4d;
-    position: absolute;
-    top: 114px;
-    left: 48px;
-    font-family: Poppins;
-    font-weight: Bold;
-    font-size: 40px;
-    opacity: 1;
-    text-align: left; }
-  .l-about .about-box-top .top-parraf {
-    width: 327px;
-    color: #344563;
-    position: relative;
-    top: 234px;
-    left: 24px;
-    font-family: Poppins;
-    font-weight: Regular;
-    font-size: 16px;
-    opacity: 1;
-    text-align: left; }
-  .l-about .about-box-top .social-media {
-    width: 200px;
-    height: 80px;
-    background: url("../images/v1_91.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    margin: 16px;
-    opacity: 1;
-    position: absolute;
-    top: 410px;
-    left: 24px;
-    overflow: hidden; }
-    .l-about .about-box-top .social-media .supporting {
-      width: 117px;
-      height: 24px;
-      background: url("../images/v1_92.png");
+  .l-about .about-box-top {
+    float: left; }
+    .l-about .about-box-top button {
+      top: 515px; }
+    .l-about .about-box-top .top-title {
+      display: flex;
+      width: 50%;
+      height: 100px;
+      color: #172b4d;
+      position: absolute;
+      top: 114px;
+      left: 24px;
+      font-family: "Poppins",sans-serif;
+      font-weight: Bold;
+      font-size: 40px;
+      opacity: 1;
+      text-align: left; }
+    .l-about .about-box-top .top-parraf {
+      width: 327px;
+      color: #344563;
+      position: relative;
+      top: 234px;
+      font-family: Poppins;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left; }
+    .l-about .about-box-top .social-media {
+      width: 200px;
+      height: 80px;
+      background: url("../images/v1_91.png");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      margin: 8px;
+      margin: 16px;
+      margin-left: unset;
       opacity: 1;
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: 415px;
+      left: unset;
       overflow: hidden; }
-      .l-about .about-box-top .social-media .supporting .social-text {
-        width: 150px;
-        margin-bottom: 20px;
-        color: #7f8cff;
-        position: relative;
-        top: -40px;
-        left: 0;
-        font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        opacity: 1;
-        text-align: left; }
-      .l-about .about-box-top .social-media .supporting .social-icons {
-        align-items: center;
-        display: flex;
-        width: 200px;
-        height: 40px;
-        background: url(../images/v1_336.png);
+      .l-about .about-box-top .social-media .supporting {
+        width: 117px;
+        height: 24px;
+        background: url("../images/v1_92.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+        margin: 8px;
+        margin-left: unset;
         opacity: 1;
-        padding: 5px;
         position: absolute;
-        top: 35px;
-        left: 2px;
+        top: 0px;
+        left: 0px;
         overflow: hidden; }
+        .l-about .about-box-top .social-media .supporting .social-text {
+          width: 150px;
+          margin-bottom: 20px;
+          color: #7f8cff;
+          position: relative;
+          top: -40px;
+          left: 0;
+          font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          opacity: 1;
+          text-align: left; }
+        .l-about .about-box-top .social-media .supporting .social-icons {
+          align-items: center;
+          display: flex;
+          width: 200px;
+          height: 40px;
+          background: url(../images/v1_336.png);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          opacity: 1;
+          padding: 5px;
+          position: absolute;
+          top: 35px;
+          padding-left: unset;
+          overflow: hidden; }
   .l-about .about-experience {
+    display: grid;
     width: 327px;
-    height: 464px;
+    height: max-content;
     background: url(../images/v1_126.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    display: grid;
+    grid-template-rows: 345px 72px 72px;
     opacity: 1;
     position: absolute;
     top: 547px;
     left: 24px;
+    overflow: hidden;
+    margin-top: 48px; }
+  .l-about .experience-language {
+    width: 327px;
+    height: 72px;
+    position: relative; }
+  .l-about .experience-group {
+    display: grid;
+    grid-template-columns: 90% 20px;
+    align-items: center;
+    width: 327px;
+    height: 72px;
+    position: relative; }
+    .l-about .experience-group .experience-text {
+      width: 237px;
+      color: black;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      opacity: 1;
+      text-align: left; }
+  .l-about .line {
+    width: 327px;
+    height: 1px;
+    background: #dfe1e6;
+    opacity: 1;
+    position: absolute;
+    top: 71px;
+    left: 0px;
     overflow: hidden; }
+  .l-about .arrow-vertical {
+    margin-top: 8px;
+    cursor: pointer;
+    float: right;
+    width: 14px;
+    height: 8px;
+    margin-right: 8px;
+    bottom: 0px; }
+  .l-about .arrow-horizontal {
+    cursor: pointer;
+    float: right;
+    width: 8px;
+    height: 14px;
+    margin-right: 8px;
+    bottom: 0px; }
   .l-about .circle {
     width: 48px;
     height: 48px;
@@ -248,9 +281,8 @@
   grid-template-rows: repeat(4, 596px);
   grid-row-gap: 80px;
   width: 375px;
-  height: 2788px;
+  height: max-content;
   background-color: transparent;
-  padding-bottom: 114px;
   margin: auto;
   opacity: 1;
   position: relative;
@@ -446,7 +478,7 @@ header {
   padding: 24px;
   position: fixed;
   top: 0%;
-  z-index: 1; }
+  z-index: 10; }
 
 .logo-text {
   width: 76px;
@@ -656,7 +688,7 @@ body {
 
 main {
   display: grid;
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
   overflow-y: hidden;
   position: absolute;
   animation: rise 0.9s ease-in-out; }

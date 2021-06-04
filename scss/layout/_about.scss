@@ -24,6 +24,11 @@
   }
 
   .about-box-top {
+    float: left;
+    button { 
+    top: 515px;  
+    }
+
     .top-title {
       display: flex;
       width: 50%;
@@ -31,8 +36,8 @@
       color: rgba(23, 43, 77, 1);
       position: absolute;
       top: 114px;
-      left: 48px;
-      font-family: Poppins;
+      left: 24px;
+      font-family: "Poppins",sans-serif;
       font-weight: Bold;
       font-size: 40px;
       opacity: 1;
@@ -44,7 +49,6 @@
       color: rgba(52, 69, 99, 1);
       position: relative;
       top: 234px;
-      left: 24px;
       font-family: Poppins;
       font-weight: Regular;
       font-size: 16px;
@@ -60,10 +64,11 @@
       background-position: center center;
       background-size: cover;
       margin: 16px;
+      margin-left: unset;
       opacity: 1;
       position: absolute;
-      top: 410px;
-      left: 24px;
+      top: 415px;
+      left: unset;
       overflow: hidden;
 
       .supporting {
@@ -74,6 +79,7 @@
         background-position: center center;
         background-size: cover;
         margin: 8px;
+        margin-left: unset;
         opacity: 1;
         position: absolute;
         top: 0px;
@@ -107,7 +113,7 @@
           padding: 5px;
           position: absolute;
           top: 35px;
-          left: 2px;
+padding-left: unset;
           overflow: hidden;
         }
       }
@@ -115,17 +121,76 @@
   }
 
   .about-experience {
+    display: grid;
     width: 327px;
-    height: 464px;
+    height: max-content;
     background: url(../images/v1_126.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    display: grid;
+    grid-template-rows: 345px 72px 72px;   
     opacity: 1;
     position: absolute;
     top: 547px;
     left: 24px;
     overflow: hidden;
+    margin-top: 48px;
+  }
+
+  .experience-language {
+    width: 327px;
+    height: 72px;
+    position: relative;
+  }
+
+  .experience-group {
+    display: grid;
+    grid-template-columns: 90% 20px;
+    align-items: center;
+    width: 327px;
+    height: 72px;
+    position: relative;
+
+    .experience-text {
+      width: 237px;
+      color: black;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      opacity: 1;
+      text-align: left;
+    }
+  }
+
+  .line {
+    width: 327px;
+    height: 1px;
+    background: #dfe1e6;
+    opacity: 1;
+    position: absolute;
+    top: 71px;
+    left: 0px;
+    overflow: hidden;   
+  }
+
+  .arrow-vertical {
+    margin-top: 8px;
+    cursor: pointer;
+    float: right;
+    width: 14px;
+    height: 8px;
+    margin-right: 8px;
+    bottom: 0px;
+  }
+
+  .arrow-horizontal {
+    cursor: pointer;
+    float: right;
+    width: 8px;
+    height: 14px;
+    margin-right: 8px;
+    bottom: 0px;
   }
 
   .circle {
