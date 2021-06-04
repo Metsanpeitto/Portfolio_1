@@ -1,0 +1,49 @@
+.c-b-normal-button {
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  opacity: 1;
+  top: 216px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  position: absolute;
+  width: 124px;
+  height: 48px;
+  border: 1px solid $blue-4;
+  box-sizing: border-box;
+  transition: all 0.9s cubic-bezier(0.86, 0, 0.07, 1);
+
+  .link {
+    width: max-content;
+    color: $blue-5;
+    opacity: 1;
+    height: 24px;
+    left: 12px;
+    top: 12px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    transition: all 0.9s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  &:hover {
+    border: 3px solid $blue-4;
+
+    .link {
+      font-size: 18px;
+      transform: translateX(-5px);
+    }
+  }
+}
