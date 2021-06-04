@@ -19,14 +19,13 @@
     padding: 24px 24px;
     margin: auto;
     top: 3506px;
-    border-radius: 0px;
-    padding: 114px, 24px, 114px, 24px;
   }
 
   .about-box-top {
     float: left;
-    button { 
-    top: 515px;  
+
+    button {
+      top: 515px;
     }
 
     .top-title {
@@ -37,8 +36,8 @@
       position: absolute;
       top: 114px;
       left: 24px;
-      font-family: "Poppins",sans-serif;
-      font-weight: Bold;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
       font-size: 40px;
       opacity: 1;
       text-align: left;
@@ -49,8 +48,8 @@
       color: rgba(52, 69, 99, 1);
       position: relative;
       top: 234px;
-      font-family: Poppins;
-      font-weight: Regular;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
       font-size: 16px;
       opacity: 1;
       text-align: left;
@@ -82,8 +81,6 @@
         margin-left: unset;
         opacity: 1;
         position: absolute;
-        top: 0px;
-        left: 0px;
         overflow: hidden;
 
         .social-text {
@@ -92,7 +89,6 @@
           color: #7f8cff;
           position: relative;
           top: -40px;
-          left: 0;
           font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
           font-weight: 400;
           font-size: 16px;
@@ -113,7 +109,7 @@
           padding: 5px;
           position: absolute;
           top: 35px;
-padding-left: unset;
+          padding-left: unset;
           overflow: hidden;
         }
       }
@@ -128,8 +124,7 @@ padding-left: unset;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    display: grid;
-    grid-template-rows: 345px 72px 72px;   
+    grid-template-rows: 345px 72px 72px;
     opacity: 1;
     position: absolute;
     top: 547px;
@@ -170,8 +165,7 @@ padding-left: unset;
     opacity: 1;
     position: absolute;
     top: 71px;
-    left: 0px;
-    overflow: hidden;   
+    overflow: hidden;
   }
 
   .arrow-vertical {
@@ -181,7 +175,6 @@ padding-left: unset;
     width: 14px;
     height: 8px;
     margin-right: 8px;
-    bottom: 0px;
   }
 
   .arrow-horizontal {
@@ -190,7 +183,6 @@ padding-left: unset;
     width: 8px;
     height: 14px;
     margin-right: 8px;
-    bottom: 0px;
   }
 
   .circle {
@@ -221,5 +213,3 @@ padding-left: unset;
     background-size: contain;
   }
 }
-
-/*************************************************************************/
