@@ -1,31 +1,19 @@
-@font-face {
-  font-family: "Poppins";
-  src: url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  width: 375px;
-  height: 718px;
-  background: rgba(255, 255, 255, 1);
-  border-radius: 0 0 0 100px;
-  opacity: 1;
-  position: relative;
-  top: 0;
-  left: 0;
-  overflow: hidden;
+.l-landing {
+    position: static;
+    display: grid;
+    width: 375px;
+    height: max-content;
+    grid-row-start: 1;
 }
 
 header {
+  background-color: $white;
   display: flex;
   cursor: pointer;
   width: 375px;
   padding: 24px;
-  position: absolute;
-  top: 20px;
+  position: fixed;
+  top: 0%;
   z-index: 1;
 }
 
@@ -57,21 +45,10 @@ nav {
   transform: scale(1.2);
 }
 
-main {
-  display: flex;
-  width: 375px;
-  height: 604px;
-  padding: 114px 24px;
-  opacity: 1;
-  position: absolute;
-  top: 40px;
-  overflow: hidden;
-}
-
 .header-text {
   width: 327px;
   color: rgba(23, 43, 77, 1);
-  position: absolute;
+  position: relative;
   top: 90px;
   left: 24px;
   font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
@@ -86,8 +63,8 @@ main {
   width: 327px;
   background-color: white;
   color: rgba(52, 69, 99, 1);
-  position: absolute;
-  top: 318px;
+  position: relative;
+  top: unset;
   left: 24px;
   line-height: 24px;
   font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
@@ -117,7 +94,7 @@ main {
   background-size: cover;
   opacity: 1;
   padding: 5px;
-  position: absolute;
+  position: relative;
   top: 35px;
   left: 2px;
   overflow: hidden;
