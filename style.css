@@ -221,6 +221,26 @@
     top: 547px;
     left: 24px;
     overflow: hidden; }
+  .l-about .circle {
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    border-radius: 50%; }
+  .l-about .yellow {
+    background: url(../images/v1_138.png);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .l-about .orange {
+    background: url(../images/v1_142.png);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .l-about .blue {
+    background: url(../images/v1_145.png);
+    background-repeat: no-repeat;
+    background-size: contain; }
 
 /*************************************************************************/
 .l-works {

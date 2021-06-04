@@ -127,6 +127,34 @@
     left: 24px;
     overflow: hidden;
   }
+
+  .circle {
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    border-radius: 50%;
+  }
+
+  .yellow {
+    background: url(../images/v1_138.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .orange {
+    background: url(../images/v1_142.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .blue {
+    background: url(../images/v1_145.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 /*************************************************************************/
