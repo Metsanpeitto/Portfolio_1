@@ -1,0 +1,199 @@
+.l-works {
+  display: grid;
+  grid-template-rows: repeat(4, 596px);
+  grid-row-gap: 80px;
+  width: 375px;
+  height: max-content;
+  background-color: transparent;
+  margin: auto;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+
+  .box {
+    display: flex;
+    width: 327px;
+    height: 610px;
+    background: $white;
+    padding: 16px 16px;
+    margin: auto;
+    margin-top: unset;
+    margin-bottom: 80px;
+    opacity: 1;
+    position: relative;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    overflow: hidden;
+
+    &__img {
+      width: 295px;
+      height: 220px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      overflow: hidden;
+    }
+
+    &__text {
+      width: 295px;
+      height: 288px;
+      display: grid;
+      opacity: 1;
+      position: absolute;
+      top: 248px;
+      left: 16px;
+      overflow: hidden;
+    }
+
+    .text {
+      width: 295px;
+      height: 80px;
+      opacity: 1;
+      position: relative;
+      overflow: hidden;
+
+      &__title {
+        width: 295px;
+        color: $blue-1;
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        opacity: 1;
+        text-align: left;
+        margin-block-start: unset;
+        margin-block-end: unset;
+      }
+
+      &__breadcrumb {
+        align-items: center;
+        height: 32px;
+        display: flex;
+        opacity: 1;
+        position: absolute;
+        top: 48px;
+        overflow: hidden;
+
+        .breadcrumb-1 {
+          align-items: center;
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 16px;
+          color: $blue-2;
+          min-width: max-content;
+          margin-right: 12px;
+          height: 32px;
+          padding: 8px;
+          padding-left: unset;
+          padding-right: unset;
+          opacity: 1;
+          overflow: hidden;
+        }
+
+        .breadcrumb {
+          align-items: center;
+          width: fit-content;
+          height: 32px;
+          display: flex;
+          padding: 8px;
+          opacity: 1;
+          overflow: hidden;
+          margin-right: 12px;
+
+          .breadcrumb-text {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            color: $blue-3;
+            width: max-content;
+          }
+        }
+
+        .breadcrumb-text-1 {
+          width: 56px;
+          height: 32px;
+          font-weight: 600;
+          font-size: 13px !important;
+          margin: unset;
+        }
+
+        .dot {
+          width: 8px;
+          height: 8px;
+          background: $blue-3;
+          opacity: 1;
+          border-radius: 50%;
+          margin-right: 12px;
+        }
+      }
+    }
+
+    &__parraf {
+      width: 295px;
+      color: $blue-2;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      opacity: 1;
+      text-align: left;
+    }
+
+    &__bubbles {
+      display: flex;
+      height: 24px;
+      opacity: 1;
+      overflow: hidden;
+      padding-left: unset;
+
+      .bubble {
+        min-width: max-content;
+        height: 24px;
+        background: #ebebff;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 4px 12px;
+        opacity: 1;
+        overflow: hidden;
+        margin-right: 12px;
+
+        .bubble-text {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 0.03em;
+          color: $blue-4;
+          margin: unset;
+        }
+      }
+    }
+
+    &__action {
+      width: 295px;
+      height: 72px;
+      flex: none;
+      order: 3;
+      flex-grow: 0;
+      padding: 12px;
+      padding-left: unset;
+      margin-top: 10px;
+    }
+  }
+}
