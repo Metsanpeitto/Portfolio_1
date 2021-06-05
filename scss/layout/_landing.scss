@@ -84,6 +84,8 @@ nav {
   width: 300px;
   overflow: hidden;
   z-index: 3;
+  height: 200px;
+  display: grid;
 }
 
 .social-icons {
@@ -91,7 +93,7 @@ nav {
   display: flex;
   width: 200px;
   height: 40px;
-  background: url(../images/v1_336.png);
+  background: url(./images/v1_336.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -103,18 +105,11 @@ nav {
   overflow: hidden;
 }
 
-ul {
-  display: contents;
-  list-style-type: none;
-}
-
 .social-text {
   width: 150px;
   margin-bottom: 20px;
-  color: rgba(127, 140, 255, 1);
+  color: #7f8cff;
   position: relative;
-  top: -40px;
-  left: 0;
   font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 400;
   font-size: 16px;

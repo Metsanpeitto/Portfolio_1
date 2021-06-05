@@ -12,6 +12,31 @@
   overflow: hidden;
   border-top-right-radius: 64px;
 
+  .social-text {
+    width: 150px;
+    margin-bottom: 20px;
+    color: #7f8cff;
+    position: relative;
+    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .social-icons {
+    align-items: center;
+    display: flex;
+    width: 200px;
+    height: 40px;
+    opacity: 1;
+    padding: 5px;
+    position: absolute;
+    top: 35px;
+    padding-left: unset;
+    overflow: hidden;
+  }
+
   .about-box {
     display: flex;
     height: 1125.146728515625px;
@@ -25,7 +50,8 @@
     float: left;
 
     button {
-      top: 515px;
+      top: 320px;
+      position: relative;
     }
 
     .top-title {
@@ -58,10 +84,6 @@
     .social-media {
       width: 200px;
       height: 80px;
-      background: url("../images/v1_91.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
       margin: 16px;
       margin-left: unset;
       opacity: 1;
@@ -73,45 +95,11 @@
       .supporting {
         width: 117px;
         height: 24px;
-        background: url("../images/v1_92.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
         margin: 8px;
         margin-left: unset;
         opacity: 1;
         position: absolute;
         overflow: hidden;
-
-        .social-text {
-          width: 150px;
-          margin-bottom: 20px;
-          color: #7f8cff;
-          position: relative;
-          top: -40px;
-          font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
-          font-weight: 400;
-          font-size: 16px;
-          opacity: 1;
-          text-align: left;
-        }
-
-        .social-icons {
-          align-items: center;
-          display: flex;
-          width: 200px;
-          height: 40px;
-          background: url(../images/v1_336.png);
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-size: cover;
-          opacity: 1;
-          padding: 5px;
-          position: absolute;
-          top: 35px;
-          padding-left: unset;
-          overflow: hidden;
-        }
       }
     }
   }
@@ -120,11 +108,7 @@
     display: grid;
     width: 327px;
     height: max-content;
-    background: url(../images/v1_126.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    grid-template-rows: 345px 72px 72px;
+    grid-template-rows: 315px 72px 72px;
     opacity: 1;
     position: absolute;
     top: 547px;
@@ -155,6 +139,39 @@
       font-size: 20px;
       opacity: 1;
       text-align: left;
+    }
+
+    .languages {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 12px;
+      height: 248.14678955078125px;
+      width: 327px;
+      top: 72px;
+
+      .language-group {
+        display: flex;
+        background: #f7f7f9;
+        height: 66.7155990600586px;
+        width: 303px;
+        left: 12px;
+        top: 169.43115234375px;
+        border-radius: 8px;
+        margin-top: 12px;
+
+        .language-name {
+          font-family: "Poppins", sans-serif;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+          text-align: left;
+          height: 24px;
+          align-self: center;
+          margin-left: 20px;
+        }
+      }
     }
   }
 
@@ -189,27 +206,26 @@
     width: 48px;
     height: 48px;
     opacity: 1;
-    position: absolute;
-    top: 9px;
-    left: 12px;
+    align-self: center;
+    margin-left: 10px;
     border-radius: 50%;
   }
 
   .yellow {
-    background: url(../images/v1_138.png);
+    background: url(./images/v1_138.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 
   .orange {
-    background: url(../images/v1_142.png);
+    background: url(./images/v1_142.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 
   .blue {
-    background: url(../images/v1_145.png);
+    background: url(./images/v1_145.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 }

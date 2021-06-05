@@ -13,7 +13,7 @@
   .box {
     display: flex;
     width: 327px;
-    height: 552px;
+    height: 610px;
     background: $white;
     padding: 16px 16px;
     margin: auto;
@@ -47,12 +47,7 @@
     &__text {
       width: 295px;
       height: 288px;
-      background: url("../images/v1_165.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
       display: grid;
-      grid-row-gap: 12px;
       opacity: 1;
       position: absolute;
       top: 248px;
@@ -63,10 +58,6 @@
     .text {
       width: 295px;
       height: 80px;
-      background: url("../images/v1_166.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
       opacity: 1;
       position: relative;
       overflow: hidden;
@@ -87,10 +78,6 @@
       &__breadcrumb {
         align-items: center;
         height: 32px;
-        background: url("../images/v1_168.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
         display: flex;
         opacity: 1;
         position: absolute;
@@ -108,10 +95,6 @@
           min-width: max-content;
           margin-right: 12px;
           height: 32px;
-          background: url(../images/v1_169.png);
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-size: cover;
           padding: 8px;
           padding-left: unset;
           padding-right: unset;
@@ -123,10 +106,6 @@
           align-items: center;
           width: fit-content;
           height: 32px;
-          background: url(../images/v1_172.png);
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-size: cover;
           display: flex;
           padding: 8px;
           opacity: 1;
@@ -142,11 +121,14 @@
             color: $blue-3;
             width: max-content;
           }
+        }
 
-          .breadcrumb-text-1 {
-            width: 56px;
-            height: 32px;
-          }
+        .breadcrumb-text-1 {
+          width: 56px;
+          height: 32px;
+          font-weight: 600;
+          font-size: 13px !important;
+          margin: unset;
         }
 
         .dot {
@@ -173,12 +155,9 @@
     &__bubbles {
       display: flex;
       height: 24px;
-      background: url(../images/v1_178.png);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
       opacity: 1;
       overflow: hidden;
+      padding-left: unset;
 
       .bubble {
         min-width: max-content;
@@ -201,6 +180,7 @@
           line-height: 16px;
           letter-spacing: 0.03em;
           color: $blue-4;
+          margin: unset;
         }
       }
     }
@@ -213,6 +193,7 @@
       flex-grow: 0;
       padding: 12px;
       padding-left: unset;
+      margin-top: 10px;
     }
   }
 }

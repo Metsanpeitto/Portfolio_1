@@ -56,6 +56,19 @@ body {
   font-size: 14px;
 }
 
+ul {
+  padding: unset;
+  display: contents;
+  list-style-type: none;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin: unset;
+}
+
 main {
   display: grid;
   grid-template-rows: repeat(3, auto);
@@ -65,28 +78,28 @@ main {
 }
 
 .image-1 {
-  background: url("../images/v1_164.png");
+  background: url("./images/v1_164.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .image-2 {
-  background: url("../images/v1_189.png");
+  background: url("./images/v1_189.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .image-3 {
-  background: url("../images/v1_214.png");
+  background: url("./images/v1_214.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .image-4 {
-  background: url("../images/v1_239.png");
+  background: url("./images/v1_239.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

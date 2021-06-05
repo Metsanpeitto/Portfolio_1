@@ -16,35 +16,22 @@
   border: 1px solid $blue-4;
   box-sizing: border-box;
   transition: all 0.9s cubic-bezier(0.86, 0, 0.07, 1);
-
-  .link {
-    width: max-content;
-    color: $blue-5;
-    opacity: 1;
-    height: 24px;
-    left: 12px;
-    top: 12px;
-    font-family: "Poppins", sans-serif;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    transition: all 0.9s cubic-bezier(0.86, 0, 0.07, 1);
-  }
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $blue-4;
 
   &:hover {
-    border: 3px solid $blue-4;
+    background-color: $blue-4;
+    color: white;
+  }
 
-    .link {
-      font-size: 18px;
-      transform: translateX(-5px);
-    }
+  &:active {
+    background-color: $blue-6;
+    color: white;
   }
 }
