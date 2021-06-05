@@ -14,16 +14,17 @@
       rel="stylesheet"
     />
     <link href="./css/style.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Portfolio</title>
   </head>
 
   <body>
-    <!-- Header  -->
     <header>
-      <a href="https://portfolio.waldenberginc.com" class="logo-text"
-        >My Logo</a
-      >
+      <!-- Navigation bar -->
+
       <nav>
+        <a href="https://portfolio.waldenberginc.com" class="logo-text"
+          >My Logo</a
+        >
         <img
           class="menu"
           src="./images/menu.svg"
@@ -33,7 +34,12 @@
         />
       </nav>
     </header>
+
+    <!-- Main section -->
+
     <main>
+      <!-- Layout 1/4 - Landing -->
+
       <section class="l-landing">
         <h1 class="header-text">
           I'm Abraham Rodriguez<br />
@@ -122,6 +128,9 @@
           </div>
         </div>
       </section>
+
+      <!-- Layout 2/4 - Work Experience -->
+
       <section class="l-works">
         <ul>
           <li>
@@ -152,7 +161,9 @@
                   <li class="bubble">
                     <h5 class="bubble-text">html</h5>
                   </li>
-                  <li class="bubble"><h5 class="bubble-text">css</h5></li>
+                  <li class="bubble">
+                    <h5 class="bubble-text">css</h5>
+                  </li>
                   <li class="bubble">
                     <h5 class="bubble-text">javaScript</h5>
                   </li>
@@ -193,7 +204,9 @@
                   <li class="bubble">
                     <h5 class="bubble-text">html</h5>
                   </li>
-                  <li class="bubble"><h5 class="bubble-text">css</h5></li>
+                  <li class="bubble">
+                    <h5 class="bubble-text">css</h5>
+                  </li>
                   <li class="bubble">
                     <h5 class="bubble-text">javaScript</h5>
                   </li>
@@ -234,7 +247,9 @@
                   <li class="bubble">
                     <h5 class="bubble-text">html</h5>
                   </li>
-                  <li class="bubble"><h5 class="bubble-text">css</h5></li>
+                  <li class="bubble">
+                    <h5 class="bubble-text">css</h5>
+                  </li>
                   <li class="bubble">
                     <h5 class="bubble-text">javaScript</h5>
                   </li>
@@ -275,7 +290,9 @@
                   <li class="bubble">
                     <h5 class="bubble-text">html</h5>
                   </li>
-                  <li class="bubble"><h5 class="bubble-text">css</h5></li>
+                  <li class="bubble">
+                    <h5 class="bubble-text">css</h5>
+                  </li>
                   <li class="bubble">
                     <h5 class="bubble-text">javaScript</h5>
                   </li>
@@ -290,6 +307,8 @@
           </li>
         </ul>
       </section>
+
+      <!-- Layout 3/4 - About -->
 
       <section class="l-about">
         <div class="about-box">
@@ -426,9 +445,34 @@
         </ul>
       </section>
 
-      <!-- Contact Layout  -->
+      <!-- Contact 4/4 - Layout -->
 
-      <section class="l-contact"></section>
+      <section class="l-contact">
+        <!-- Block 1/3 - Text -->
+
+        <div class="l-contact-text">
+          <h2 class="text-title">Contact me</h2>
+          <p class="text-parraf">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+        </div>
+
+        <!-- Block 2/3 - Form -->
+
+        <form action="l-contact-form">
+          <input type="text" name="input-name" id="input-name" />
+          <input type="email" name="input-email" id="input-email" />
+          <input type="text" name="unput-message" id="input-message" />
+        </form>
+
+        <!-- Block 3/3 - Action -->
+
+        <div class="-l-contact-action">
+          <button type="submit">Get In Touch</button>
+        </div>
+      </section>
     </main>
   </body>
 </html>

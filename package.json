@@ -17,7 +17,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "node-sass --include-path scss style.scss style.css",
+    "css": "node-sass --include-path scss scss/style.scss css/style.css",
     "watch": "nodemon -e scss -x 'npm run css'",
     "dev": "lite-server"
   },
