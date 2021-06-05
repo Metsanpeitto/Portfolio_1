@@ -1,0 +1,61 @@
+/**
+*
+* header.scss
+*
+* One of the fundamentals part of a website. 
+* It includes:
+*             -Navigation bar 
+*               - Logo
+*               - Menu button
+*
+*
+*/
+
+// Layout Header
+
+.l-header {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  cursor: pointer;
+  width: 100vw;
+  height: 45px;  
+  position: fixed;
+  top: 0%;
+  z-index: 10;
+
+// Main Block  -  Navigation
+
+  &__nav {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+
+    .logo-text {
+      color: $blue-4;
+    width: 76px;
+    height: 45px;
+    color: $blue-4;
+    position: relative;
+    top: 12px;
+    left: 24px;
+    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+    text-decoration: none;
+    }
+
+    .menu {
+      width: 48px;
+      height: 48px;
+      float: right;
+    }
+
+    .menu:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+

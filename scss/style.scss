@@ -38,22 +38,39 @@
                  |___1.4.1 about
                  |
                  |
-                 |___1.4.2 works
+                 |___1.4.2 contact
+                 |
+                 |
+                 |___1.4.3 header
+                 |
+                 |
+                 |___1.4.4 landing
+                 |
+                 |
+                 |___1.4.5 works
 */
 
-@import "scss/base/animations";
-@import "scss/abstract/variables";
-@import "scss/components/buttons";
-@import "scss/layout/about";
-@import "scss/layout/works";
-@import "scss/layout/landing";
+@import "base/animations";
+@import "abstract/variables";
+@import "components/buttons";
+@import "layout/about";
+@import "layout/contact";
+@import "layout/header";
+@import "layout/landing";
+@import "layout/works";
 
 * {
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
+  display: block;
+  width: 100%;
   font-size: 14px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -74,32 +91,36 @@ main {
   grid-template-rows: repeat(3, auto);
   overflow-y: hidden;
   position: absolute;
+  -webkit-animation: rise 0.9s ease-in-out;
   animation: rise 0.9s ease-in-out;
+  max-width: 100%;
+  overflow-x: hidden;
+  justify-content: center;
 }
 
 .image-1 {
-  background: url("./images/v1_164.png");
+  background: url("../images/v1_164.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .image-2 {
-  background: url("./images/v1_189.png");
+  background: url("../images/v1_189.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .image-3 {
-  background: url("./images/v1_214.png");
+  background: url("../images/v1_214.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .image-4 {
-  background: url("./images/v1_239.png");
+  background: url("../images/v1_239.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

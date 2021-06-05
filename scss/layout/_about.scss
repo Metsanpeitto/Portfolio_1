@@ -1,9 +1,8 @@
 .l-about {
   display: grid;
-  grid-template-rows: repeat(4, 596px);
+  grid-template-rows: repeat(2, 596px);
   grid-row-gap: 80px;
   width: 375px;
-  height: 2788px;
   background-color: transparent;
   padding: unset;
   margin: auto;
@@ -212,19 +211,19 @@
   }
 
   .yellow {
-    background: url(./images/v1_138.png);
+    background: url(../images/v1_138.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .orange {
-    background: url(./images/v1_142.png);
+    background: url(../images/v1_142.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .blue {
-    background: url(./images/v1_145.png);
+    background: url(../images/v1_145.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
