@@ -24,6 +24,9 @@
    |           |
    |           |
    |           |___1.2.1 animations
+   |           |
+   |           |
+   |           |___1.2.2 images   
    |
    |
    |___1.3 components
@@ -51,6 +54,7 @@
 */
 
 @import "base/animations";
+@import "base/images";
 @import "abstract/variables";
 @import "components/buttons";
 @import "layout/about";
@@ -98,30 +102,13 @@ main {
   justify-content: center;
 }
 
-.image-1 {
-  background: url("../images/v1_164.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
 
-.image-2 {
-  background: url("../images/v1_189.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
 
-.image-3 {
-  background: url("../images/v1_214.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
+// This line is for development use
 
-.image-4 {
-  background: url("../images/v1_239.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+.l-header,
+.l-landing,
+.l-works,
+.l-about {
+  display: none;
 }
