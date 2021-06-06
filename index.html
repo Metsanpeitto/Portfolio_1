@@ -484,48 +484,53 @@ Implement the button interactions (enable, hover, etc.).
 
         <!-- Block 2/3 - Form -->
 
-        <form action="submit">
+        <form action="https://formspree.io/f/mwkaodba" method="post">
           <input
             type="text"
             class="input"
-            id="input-name"
+            name="name"
+            id="full-name"
             maxlength="30"
             placeholder="Write your name here"
             aria-required="true"
             data-ok="false"
+            required
           />
           <input
             type="email"
             class="input"
-            id="input-email"
+            name="_replyto"
+            id="email-address"
             placeholder="Write your email here"
             aria-required="true"
             data-ok="false"
+            required
           />
           <textarea
             type="text"
             class="input-message"
-            id="input-message"
+            name="message"
+            id="message"
             maxlength="500"
             aria-required="true"
             data-ok="false"
+            placeholder="Write your message here"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            id="submit"
+            class="c-b-normal-button"
+            aria-disabled="true"
+            aria-describedby="full-name email-address message"
           >
-            Write your message here
-            </textarea
-          >
+            Get In Touch
+          </button>
         </form>
 
         <!-- Block 3/3 - Action -->
 
         <div class="l-contact__action">
-          <button
-            type="submit"
-            class="c-b-normal-button"
-            aria-disabled="true"
-            aria-describedby="input-name input-email input-message"
-          >
-            Get In Touch
-          </button>
           <div class="line-shape"></div>
         </div>
       </section>

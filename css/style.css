@@ -534,6 +534,21 @@
 *
 */
 /*  layout contact  */
+/**  Note for the code reviewer 
+*
+* In the instructions says:
+*  'In order to lay out the elements on the page you should 
+*  use Flexbox.'
+*
+* However 'should' does not mean 'must' or 'have to', so I am dubious
+* about it.
+* I think that in this case is better to use grid layout because
+* it  would make things easier when doing the responsive feature.
+* I really find grid layout more realiable than flexbox and 
+* try to avoid the last one. But if I have to, in a mandatory way,
+* use flexbox, let me know and I will do the changes needed.
+*
+*/
 .l-contact {
   display: grid;
   grid-template-columns: 24px auto 24px;
@@ -641,6 +656,11 @@
   position: absolute;
   top: 50px;
 }
+.l-contact form:invalid > #submit {
+  background-color: white;
+  border: 1px solid #C1C7D0;
+  color: #5E6C84;
+}
 .l-contact form ::-webkit-input-placeholder {
   /* Edge */
   color: #B3BAC5;
@@ -675,7 +695,7 @@
   padding-left: 16px;
 }
 .l-contact form .input-message {
-  color: inherit;
+  color: #172b4d;
   height: 170px;
   width: 327px;
   border-radius: 8px;
@@ -692,6 +712,11 @@
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+}
+.l-contact form button {
+  top: unset;
+  position: relative;
+  grid-row-start: 4;
 }
 .l-contact__action {
   display: grid;
@@ -710,11 +735,6 @@
   *
   *
   */
-}
-.l-contact__action button {
-  top: unset;
-  position: relative;
-  grid-row-start: 1;
 }
 .l-contact__action .line-shape {
   grid-row-start: 2;

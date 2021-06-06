@@ -15,6 +15,22 @@
 
 /*  layout contact  */
 
+
+/**  Note for the code reviewer 
+*
+* In the instructions says:
+*  'In order to lay out the elements on the page you should 
+*  use Flexbox.'
+*
+* However 'should' does not mean 'must' or 'have to', so I am dubious
+* about it.
+* I think that in this case is better to use grid layout because
+* it  would make things easier when doing the responsive feature.
+* I really find grid layout more realiable than flexbox and 
+* try to avoid the last one. But if I have to, in a mandatory way,
+* use flexbox, let me know and I will do the changes needed.
+*
+*/
 .l-contact {
   display: grid;
   grid-template-columns: 24px auto 24px;
@@ -126,6 +142,12 @@
     position: absolute;
     top: 50px;
 
+    &:invalid > #submit {
+      background-color: white;
+      border: 1px solid $gray-light;
+      color: $gray-dark;
+    }
+
     ::-webkit-input-placeholder {
       /* Edge */
       color: $gray;
@@ -157,7 +179,7 @@
     }
 
     .input-message {
-      color: inherit;
+      color: $blue-1;
       height: 170px;
       width: 327px;
       border-radius: 8px;
@@ -174,6 +196,12 @@
       letter-spacing: 0em;
       text-align: left;
     }
+
+    button {
+      top: unset;
+      position: relative;
+      grid-row-start: 4;
+    }
   }
 
   /*  block 3/3 - Action  */
@@ -185,7 +213,7 @@
     grid-column-start: 2;
     padding-top: 22px;
 
-/*  
+    /*  
 *
 *   Important note about the style of this button in this layout.   
 *   When the button has been pressed once, it state would turn to 'visited',
@@ -195,13 +223,7 @@
 *   the code reviewers have already told me to stick to the design, so I let it be. 
 *
 *
-*/ 
-
-    button {
-      top: unset;
-      position: relative;
-      grid-row-start: 1;
-    }
+*/
 
     .line-shape {
       grid-row-start: 2;
