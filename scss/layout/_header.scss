@@ -4,14 +4,14 @@
 *
 * One of the fundamentals part of a website. 
 * It includes:
-*             -Navigation bar 
-*               - Logo
-*               - Menu button
+* - Navigation bar 
+* - Logo
+* - Menu button
 *
 *
 */
 
-// Layout Header
+/* layout header  */
 
 .l-header {
   background-color: #fff;
@@ -24,7 +24,7 @@
   top: 0%;
   z-index: 10;
 
-// Main Block  -  Navigation
+/* main block  -  Navigation  */
 
   &__nav {
     position: absolute;

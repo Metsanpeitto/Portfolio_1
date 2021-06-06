@@ -447,6 +447,21 @@
 
       <!-- Contact 4/4 - Layout -->
 
+      <!--
+        Make sure that:
+Name field accepts up to 30 chars.
+Email field accepts only emails.
+Message field accepts up to 500 chars.
+All fields have placeholder text.
+All fields have the correct type.
+A user cannot submit the form if one or more of the fields is empty.
+Collect data by using the Formspree service.
+In order to lay out the elements on the page you should use Flexbox.
+You don't need to implement any functionality that requires JavaScript.
+You must stick to the design as much as possible (e.g., font, colors, images, tests, margins) using the templates in Figma.
+Implement the button interactions (enable, hover, etc.).
+      -->
+
       <section class="l-contact">
         <!-- Background Images -->
 
@@ -469,16 +484,49 @@
 
         <!-- Block 2/3 - Form -->
 
-        <form>
-          <input type="text" name="input-name" id="input-name" />
-          <input type="email" name="input-email" id="input-email" />
-          <input type="text" name="unput-message" id="input-message" />
+        <form action="submit">
+          <input
+            type="text"
+            class="input"
+            id="input-name"
+            maxlength="30"
+            placeholder="Write your name here"
+            aria-required="true"
+            data-ok="false"
+          />
+          <input
+            type="email"
+            class="input"
+            id="input-email"
+            placeholder="Write your email here"
+            aria-required="true"
+            data-ok="false"
+          />
+          <textarea
+            type="text"
+            class="input-message"
+            id="input-message"
+            maxlength="500"
+            aria-required="true"
+            data-ok="false"
+          >
+            Write your message here
+            </textarea
+          >
         </form>
 
         <!-- Block 3/3 - Action -->
 
         <div class="l-contact__action">
-          <button type="submit">Get In Touch</button>
+          <button
+            type="submit"
+            class="c-b-normal-button"
+            aria-disabled="true"
+            aria-describedby="input-name input-email input-message"
+          >
+            Get In Touch
+          </button>
+          <div class="line-shape"></div>
         </div>
       </section>
     </main>
