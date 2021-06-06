@@ -556,12 +556,41 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 103px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: grid;
 }
-.l-contact__form {
-  display: none;
+.l-contact__text .text-title {
+  color: white;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+.l-contact__text .text-parraf {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.l-contact form {
+  grid-row-start: 2;
+  grid-column-start: 2;
 }
 .l-contact__action {
   display: none;
+  color: black;
 }
 
 /**
@@ -955,6 +984,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 .l-header,
