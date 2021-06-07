@@ -2,9 +2,9 @@
 * works.scss
 *
 * This is the Work Experience Layout were we want to proof
-* the user and potential employes of our experience, relaiability 
-* and accountability.  
-* 
+* the user and potential employes of our experience, relaiability
+* and accountability.
+*
 *
 */
 
@@ -22,7 +22,7 @@
   position: relative;
   overflow: hidden;
 
-  /*  main block  */  
+  /*  main block  */
 
   .box {
     display: flex;
@@ -60,7 +60,6 @@
       overflow: hidden;
     }
 
-
     /* block 2/2 - Text */
 
     &__text {
@@ -71,7 +70,7 @@
       position: absolute;
       top: 248px;
       left: 16px;
-      overflow: hidden;      
+      overflow: hidden;
     }
 
     .text {
@@ -171,7 +170,7 @@
       text-align: left;
     }
 
-    &__bubbles {
+    &__bubbles {      
       display: flex;
       height: 24px;
       opacity: 1;
