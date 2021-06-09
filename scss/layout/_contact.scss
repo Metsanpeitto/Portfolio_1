@@ -13,21 +13,6 @@
 *
 */
 
-/**  Note for the code reviewer
-*
-* In the instructions says:
-*  'In order to lay out the elements on the page you should
-*  use Flexbox.'
-*
-* However 'should' does not mean 'must' or 'have to', so I am dubious
-* about it.
-* I think that in this case is better to use grid layout because
-* it  would make things easier when doing the responsive feature.
-* I really find grid layout more realiable than flexbox and
-* try to avoid the last one. But if I have to, in a mandatory way,
-* use flexbox, let me know and I will do the changes needed.
- layout contact  */
-
 .l-contact {
   display: flex;
   flex-direction: column;
