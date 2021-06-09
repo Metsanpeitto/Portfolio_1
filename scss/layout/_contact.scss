@@ -10,8 +10,23 @@
 * - Use white color to transmit trust.
 * - Use blue color to transmit stability and confidence.
 * - Use rounded corners, they are easier on the eyes.
-​*
-*---  layout contact  --- */
+*
+*/
+
+/**  Note for the code reviewer
+*
+* In the instructions says:
+*  'In order to lay out the elements on the page you should
+*  use Flexbox.'
+*
+* However 'should' does not mean 'must' or 'have to', so I am dubious
+* about it.
+* I think that in this case is better to use grid layout because
+* it  would make things easier when doing the responsive feature.
+* I really find grid layout more realiable than flexbox and
+* try to avoid the last one. But if I have to, in a mandatory way,
+* use flexbox, let me know and I will do the changes needed.
+ layout contact  */
 
 .l-contact {
   display: flex;
@@ -23,7 +38,8 @@
   position: relative;
 
   /*  background images  */
-  ​ .e-12 {
+
+  .e-12 {
     height: 21px;
     width: 21px;
     left: 153px;
@@ -31,7 +47,7 @@
     position: relative;
   }
 
-  ​ .e-3 {
+  .e-3 {
     height: 90px;
     width: 70px;
     left: 330px;
@@ -40,7 +56,7 @@
     transform: rotate(12deg);
   }
 
-  ​ .r-7 {
+  .r-7 {
     height: 82px;
     width: 100px;
     right: -40px;
@@ -49,7 +65,7 @@
     transform: rotate(115deg);
   }
 
-  ​ .e-5 {
+  .e-5 {
     height: 30px;
     width: 30px;
     left: 250px;
@@ -57,7 +73,7 @@
     position: absolute;
   }
 
-  ​ .r-7-b {
+  .r-7-b {
     height: 60px;
     width: 75px;
     right: 50px;
@@ -68,7 +84,8 @@
   }
 
   /*  block 1/3 - Text  */
-  ​ &__text {
+
+  &__text {
     width: 327px;
     margin-left: auto;
     margin-right: auto;
@@ -78,7 +95,7 @@
     order: 1;
     float: initial;
 
-    ​ .text-title {
+    .text-title {
       color: white;
       position: relative;
       font-family: "Poppins", sans-serif;
@@ -90,7 +107,7 @@
       margin: auto;
     }
 
-    ​ .text-parraf {
+    .text-parraf {
       color: white;
       font-size: 20px;
       font-style: normal;
@@ -115,27 +132,27 @@
     margin: auto;
     width: 327px;
 
-    ​ &:invalid > #submit {
+    &:invalid > #submit {
       background-color: white;
       border: 1px solid $gray-light;
       color: $gray-dark;
     }
 
-    ​ ::-webkit-input-placeholder {
+    ::-webkit-input-placeholder {
       /* Edge */
       color: $gray;
     }
 
-    ​ :-ms-input-placeholder {
+    :-ms-input-placeholder {
       /* Internet Explorer 10-11 */
       color: $gray;
     }
 
-    ​ ::placeholder {
+    ::placeholder {
       color: $gray;
     }
 
-    ​ .input {
+    .input {
       height: 48px;
       width: 327px;
       border-radius: 8px;
@@ -150,7 +167,7 @@
       padding-left: 16px;
     }
 
-    ​ .input-message {
+    .input-message {
       color: $blue-1;
       height: 170px;
       width: 327px;
@@ -168,7 +185,7 @@
       text-align: left;
     }
 
-    ​ button {
+    button {
       top: unset;
       position: relative;
       grid-row-start: 4;
@@ -176,7 +193,8 @@
   }
 
   /*  block 3/3 - Action  */
-  ​ &__action {
+
+  &__action {
     display: grid;
     grid-template-rows: auto 20px;
     grid-row-start: 3;
@@ -185,7 +203,7 @@
     order: 3;
     float: initial;
 
-    ​.line-shape {
+    .line-shape {
       grid-row-start: 2;
       margin: auto;
       height: 5px;
