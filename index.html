@@ -13,16 +13,18 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link href="./style.css" rel="stylesheet" />
-    <title>Document</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <title>Portfolio</title>
   </head>
 
   <body>
-    <header>
-      <a href="https://portfolio.waldenberginc.com" class="logo-text"
-        >My Logo</a
-      >
-      <nav>
+    <header class="l-header">
+      <!-- Navigation bar -->
+
+      <nav class="l-header__nav">
+        <a href="https://portfolio.waldenberginc.com" class="logo-text"
+          >My Logo</a
+        >
         <img
           class="menu"
           src="./images/menu.svg"
@@ -32,7 +34,12 @@
         />
       </nav>
     </header>
+
+    <!-- Main section -->
+
     <main>
+      <!-- Layout 1/4 - Landing -->
+
       <section class="l-landing">
         <h1 class="header-text">
           I'm Abraham Rodriguez<br />
@@ -121,6 +128,9 @@
           </div>
         </div>
       </section>
+
+      <!-- Layout 2/4 - Work Experience -->
+
       <section class="l-works">
         <ul>
           <li>
@@ -151,7 +161,9 @@
                   <li class="bubble">
                     <h5 class="bubble-text">html</h5>
                   </li>
-                  <li class="bubble"><h5 class="bubble-text">css</h5></li>
+                  <li class="bubble">
+                    <h5 class="bubble-text">css</h5>
+                  </li>
                   <li class="bubble">
                     <h5 class="bubble-text">javaScript</h5>
                   </li>
@@ -192,7 +204,9 @@
                   <li class="bubble">
                     <h5 class="bubble-text">html</h5>
                   </li>
-                  <li class="bubble"><h5 class="bubble-text">css</h5></li>
+                  <li class="bubble">
+                    <h5 class="bubble-text">css</h5>
+                  </li>
                   <li class="bubble">
                     <h5 class="bubble-text">javaScript</h5>
                   </li>
@@ -233,7 +247,9 @@
                   <li class="bubble">
                     <h5 class="bubble-text">html</h5>
                   </li>
-                  <li class="bubble"><h5 class="bubble-text">css</h5></li>
+                  <li class="bubble">
+                    <h5 class="bubble-text">css</h5>
+                  </li>
                   <li class="bubble">
                     <h5 class="bubble-text">javaScript</h5>
                   </li>
@@ -274,7 +290,9 @@
                   <li class="bubble">
                     <h5 class="bubble-text">html</h5>
                   </li>
-                  <li class="bubble"><h5 class="bubble-text">css</h5></li>
+                  <li class="bubble">
+                    <h5 class="bubble-text">css</h5>
+                  </li>
                   <li class="bubble">
                     <h5 class="bubble-text">javaScript</h5>
                   </li>
@@ -289,6 +307,8 @@
           </li>
         </ul>
       </section>
+
+      <!-- Layout 3/4 - About -->
 
       <section class="l-about">
         <div class="about-box">
@@ -423,6 +443,82 @@
             <div class="line"></div>
           </li>
         </ul>
+      </section>
+
+      <!-- Contact 4/4 - Layout -->
+
+      <section class="l-contact">
+        <!-- Background Images -->
+
+        <div class="e-12"></div>
+        <div class="e-3"></div>
+        <div class="e-5"></div>
+        <div class="r-7"></div>
+        <div class="r-7 r-7-b"></div>
+
+        <!-- Block 1/3 - Text -->
+
+        <div class="l-contact__text">
+          <h2 class="text-title">Contact me</h2>
+          <p class="text-parraf">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+        </div>
+
+        <!-- Block 2/3 - Form -->
+
+        <form action="https://formspree.io/f/mwkaodba" method="post">
+          <div>
+            <input
+              type="text"
+              class="input"
+              name="name"
+              id="full-name"
+              maxlength="30"
+              placeholder="Write your name here"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              class="input"
+              name="_replyto"
+              id="email-address"
+              placeholder="Write your email here"
+              required
+            />
+          </div>
+          <div>
+            <textarea
+              class="input-message"
+              name="message"
+              id="message"
+              maxlength="500"
+              placeholder="Write your message here"
+              required
+            ></textarea>
+          </div>
+          <div>
+            <button
+              type="submit"
+              id="submit"
+              class="c-b-normal-button"
+              aria-disabled="true"
+              aria-describedby="full-name email-address message"
+            >
+              Get In Touch
+            </button>
+          </div>
+        </form>
+
+        <!-- Block 3/3 - Action -->
+
+        <div class="l-contact__action">
+          <div class="line-shape"></div>
+        </div>
       </section>
     </main>
   </body>

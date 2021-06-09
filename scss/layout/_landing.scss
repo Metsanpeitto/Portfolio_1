@@ -1,3 +1,18 @@
+/**
+* landing.scss
+*
+* This is the Landing Layout were we try to impress the
+* user and make him to stay. So it's important to use
+* shapes and colors that make him feel confortable and
+* transmit all the emotions and ideas that we think would
+* help us to make him trust on us and give us a job.
+*
+* - Use white color to transmit trust.
+* - Use black color to transmit being elegant, formal, slick or modern.
+* - Use blue color to transmit stability and confidence.
+* - Use rounded corners, they are easier on the eyes.
+/*  Layout landing  */
+
 .l-landing {
   position: static;
   display: grid;
@@ -5,233 +20,86 @@
   height: 718px;
   grid-row-start: 1;
   border-bottom-left-radius: 64px;
-}
 
-header {
-  background-color: $white;
-  display: flex;
-  cursor: pointer;
-  width: 375px;
-  padding: 24px;
-  position: fixed;
-  top: 0%;
-  z-index: 10;
-}
+  /*  block 1/3 - Title Text    */
 
-.logo-text {
-  width: 76px;
-  color: #6070ff;
-  position: absolute;
-  top: 5px;
-  font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  opacity: 1;
-  text-align: center;
-  text-decoration: none;
-}
+  .header-text {
+    width: 327px;
+    color: rgba(23, 43, 77, 1);
+    position: relative;
+    top: 90px;
+    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    opacity: 1;
+    text-align: left;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
 
-nav {
-  position: absolute;
-  top: -5px;
-  right: 20px;
-}
+  /*  block 2/3 - Parraf Text   */
 
-.menu {
-  width: 48px;
-  height: 48px;
-}
+  .header-parraf {
+    width: 327px;
+    background-color: white;
+    color: rgba(52, 69, 99, 1);
+    position: relative;
+    top: unset;
+    left: 24px;
+    line-height: 24px;
+    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+    z-index: 1;
+  }
 
-.menu:hover {
-  transform: scale(1.2);
-}
+  /*  block 3/3 - Social Icons  */
 
-.header-text {
-  width: 327px;
-  color: rgba(23, 43, 77, 1);
-  position: relative;
-  top: 90px;
-  font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  opacity: 1;
-  text-align: left;
-  margin-left: 24px;
-  margin-right: 24px;
-}
+  .social {
+    position: absolute;
+    top: 490px;
+    left: 24px;
+    width: 300px;
+    overflow: hidden;
+    z-index: 3;
+    height: 200px;
+    display: grid;
 
-.header-parraf {
-  width: 327px;
-  background-color: white;
-  color: rgba(52, 69, 99, 1);
-  position: relative;
-  top: unset;
-  left: 24px;
-  line-height: 24px;
-  font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  opacity: 1;
-  text-align: left;
-  z-index: 1;
-}
+    .social-text {
+      width: 150px;
+      margin-bottom: 20px;
+      color: #7f8cff;
+      position: relative;
+      font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left;
+    }
 
-.social {
-  position: absolute;
-  top: 490px;
-  left: 24px;
-  width: 300px;
-  overflow: hidden;
-  z-index: 3;
-  height: 200px;
-  display: grid;
-}
+    .social-icons {
+      align-items: center;
+      display: flex;
+      width: 200px;
+      height: 40px;
+      opacity: 1;
+      padding: 5px;
+      position: absolute;
+      top: 35px;
+      left: 2px;
+      overflow: hidden;
+    }
 
-.social-icons {
-  align-items: center;
-  display: flex;
-  width: 200px;
-  height: 40px;
-  background: url(./images/v1_336.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  padding: 5px;
-  position: absolute;
-  top: 35px;
-  left: 2px;
-  overflow: hidden;
-}
+    .icon {
+      margin-right: 20px;
+      cursor: pointer;
+    }
 
-.social-text {
-  width: 150px;
-  margin-bottom: 20px;
-  color: #7f8cff;
-  position: relative;
-  font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  opacity: 1;
-  text-align: left;
-}
-
-.icon {
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-.icon:hover {
-  transform: scale(1.2);
-}
-
-.e-3 {
-  background-image: url("./images/Ellipse-3.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  right: -45px;
-  top: 82px;
-  width: 100px;
-  height: 100px;
-}
-
-.e-8 {
-  background-image: url("./images/Ellipse-8.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 246px;
-  top: 40px;
-  width: 15px;
-  height: 15px;
-}
-
-.r-6 {
-  background-image: url("./images/Rectangle-6.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  right: -8px;
-  top: 40px;
-  width: 76px;
-  height: 80px;
-  transform: rotate(10deg);
-}
-
-.e-11 {
-  background-image: url("./images/Ellipse-11.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: -20px;
-  top: 63px;
-  width: 45px;
-  height: 70px;
-}
-
-.e-5 {
-  background-image: url("./images/Ellipse-5.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 90px;
-  top: 105px;
-  width: 30px;
-  height: 26px;
-}
-
-.r-5 {
-  background-image: url("./images/Rectangle-6.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 230px;
-  top: 575px;
-  width: 68px;
-  height: 55px;
-  transform: rotate(65deg);
-}
-
-.r-7 {
-  background-image: url("./images/Rectangle-7.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 95px;
-  top: 95px;
-  width: 30px;
-  height: 26px;
-}
-
-.e-8-b {
-  background-image: url("./images/Ellipse-8.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 580px;
-  left: 46px;
-  width: 15px;
-  height: 15px;
-}
-
-.e-4 {
-  background-image: url("./images/Ellipse-4.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 275px;
-  top: 570px;
-  width: 20px;
-  height: 20px;
-}
-
-.e-13 {
-  left: 310px;
-  top: 487px;
-  width: 30px;
-  height: 30px;
-}
-
-.e-4-b {
-  background-image: url("./images/Ellipse-4.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 32px;
-  top: 470px;
-  width: 20px;
-  height: 20px;
+    .icon:hover {
+      transform: scale(1.2);
+    }
+  }
 }

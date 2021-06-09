@@ -1,12 +1,11 @@
-# Portfolio: setup and mobile version skeleton
+# Portfolio: add a contact form and finish the mobile version
 
 ![Alt text](images/screenshot.png?raw=true "Optional Title")
 
 ## Learning objectives
-- Understand how to parse a Figma design to create a UI.
-- Use Flexbox to place elements in the page.
-- Use CSS Grid to place elements in the page.
-- Build a personal portfolio site.
+ - Create forms with HTML5 validations.
+ - Understand the importance of UX.
+ - Understand how to parse a Figma design to create a UI.
 
 =======
 

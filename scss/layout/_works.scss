@@ -1,3 +1,11 @@
+/**
+* works.scss
+*
+* This is the Work Experience Layout were we want to proof
+* the user and potential employes of our experience, relaiability
+* and accountability.
+  Layout works  */
+
 .l-works {
   display: grid;
   grid-template-rows: repeat(4, 596px);
@@ -9,6 +17,8 @@
   opacity: 1;
   position: relative;
   overflow: hidden;
+
+  /*  main block  */
 
   .box {
     display: flex;
@@ -27,6 +37,8 @@
     border-bottom-right-radius: 16px;
     overflow: hidden;
 
+    /* block 1/2 - Image */
+
     &__img {
       width: 295px;
       height: 220px;
@@ -43,6 +55,8 @@
       border-bottom-right-radius: 8px;
       overflow: hidden;
     }
+
+    /* block 2/2 - Text */
 
     &__text {
       width: 295px;

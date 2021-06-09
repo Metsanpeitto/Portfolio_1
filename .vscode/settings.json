@@ -1,0 +1,21 @@
+{
+    "liveSassCompile.settings.formats": [
+{
+"format": "expanded",
+"extensionName": ".css",
+"savePath": "/css"
+}
+],
+"color-highlight.languages": [ "*", "!scss" ],
+"stylelint.config": {
+    "rules": {
+        "at-rule-name-case": "lower",
+        "at-rule-name-space-after": "always-single-line",
+        "at-rule-semicolon-newline-after": "always",
+    }
+},
+"editor.formatOnSave": true,
+"[css]": {
+    "editor.formatOnSave": true
+}   
+}
