@@ -14,12 +14,94 @@
 /*  Layout landing  */
 
 .l-landing {
+  background-color: white;
   position: static;
   display: grid;
   width: 375px;
   height: 718px;
   grid-row-start: 1;
   border-bottom-left-radius: 64px;
+
+  /* Background Images  */
+
+  .e-3 {
+    width: 105px;
+    height: 105px;
+    left: 332px;
+    top: 81px;
+  }
+
+  .e-4 {
+    width: 20px;
+    height: 20px;
+    top: 657px;
+    left: 232px;
+  }
+
+  .e-5 {
+    width: 12px;
+    height: 12px;
+    left: 125px;
+    top: 95px;
+  }
+
+  .e-8 {
+    width: 15px;
+    height: 15px;
+    top: 50px;
+    left: 210px;
+  }
+
+  .e-11 {
+    width: 45px;
+    height: 35px;
+    left: -20px;
+    top: 60px;
+  }
+
+  .e-12 {
+    width: 25px;
+    height: 12px;
+    top: 533px;
+    left: 317px;
+  }
+
+  .e-13 {
+    width: 30px;
+    height: 30px;
+    top: 540px;
+    left: 304px;
+  }
+
+  .e-15 {
+    width: 15px;
+    height: 15px;
+    top: 645px;
+    left: 53px;
+  }
+
+  .r-4 {
+width: 88px;
+    height: 93px;
+    top: 32px;
+    left: 311px;
+    transform: rotate(
+15deg
+);
+  }
+
+  .r-5 {
+    width: 68px;
+    height: 12px;
+    top: 653px;
+    left: 187px;
+  }
+  .r-7 {
+    width: 37px;
+    height: 30px;
+    left: 113px;
+    top: 74px;
+  }
 
   /*  block 1/3 - Title Text    */
 
@@ -42,6 +124,7 @@
 
   .header-parraf {
     width: 327px;
+    height: 180px;
     background-color: white;
     color: rgba(52, 69, 99, 1);
     position: relative;
@@ -60,7 +143,7 @@
 
   .social {
     position: absolute;
-    top: 490px;
+    top: 530px;
     left: 24px;
     width: 300px;
     overflow: hidden;
@@ -100,6 +183,135 @@
 
     .icon:hover {
       transform: scale(1.2);
+    }
+  }
+
+  /*  Desktop values  */
+
+  @media only screen and (min-width: 1024px) {
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: auto 960px auto;
+
+    .header-text {
+      align-self: end;
+      width: 920px;
+      grid-column-start: 2;
+      height: 122px;
+      margin-top: 260px;
+      margin-left: unset;
+      margin-bottom: unset;
+      font-size: 48px;
+      top: unset;
+    }
+
+    .header-parraf {
+      width: 920px;
+      grid-column-start: 2;
+      height: 98px;
+      font-size: 20px;
+      margin-left: unset;
+      margin-bottom: unset;
+      margin-top: unset;
+      left: unset;
+    }
+
+    .social {
+      margin-left: unset;
+      top: -36px;
+      left: unset;
+      grid-column-start: 2;
+      grid-row-start: 3;
+      margin-left: unset;
+      position: relative;
+    }
+
+    /*  Backgound images  */
+
+    .e-3 {
+      width: 224px;
+      height: 224px;
+      top: 160px;
+      right: 8px;
+      left: unset;
+    }
+
+    .e-4 {
+      width: 47px;
+      height: 47px;
+      top: 757px;
+      left: 840px;
+      z-index: 2;
+    }
+
+    .e-5 {
+      width: 32px;
+      height: 32px;
+      top: 256px;
+      left: 708px;
+    }
+
+    .e-8 {
+      display: none;
+    }
+
+    .e-11 {
+      width: 90px;
+      height: 70px;
+      top: 190px;
+      left: 80px;
+      z-index: 2;
+    }
+
+    .e-12 {
+      width: 37px;
+      height: 19px;
+      top: 768px;
+      left: 377px;
+      transform: rotate(185deg);
+      z-index: 2;
+    }
+
+    .e-13 {
+      width: 40px;
+      height: 40px;
+      top: 780px;
+      left: 365px;
+      background-size: contain;
+    }
+
+    .r-4 {
+      width: 90px;
+      height: 90px;
+      top: 750px;
+      left: 780px;
+      transform: rotate(70deg);
+    }
+
+    .r-5 {
+      width: 162px;
+      height: 90px;
+      top: 115px;
+      right: 100px;
+      left: unset;
+      transform: rotate(124deg) scale(1.2);
+    }
+
+    .r-6 {
+      width: 115px;
+      height: 120px;
+      top: 130px;
+      left: 35px;
+      background-size: cover;
+    }
+
+    .r-7 {
+      width: 70px;
+      height: 58px;
+      top: 220px;
+      left: 690px;
+      -webkit-transform: rotate(180);
+      transform: rotate(125deg);
     }
   }
 }
