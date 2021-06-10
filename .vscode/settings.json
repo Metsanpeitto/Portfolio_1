@@ -14,8 +14,10 @@
         "at-rule-semicolon-newline-after": "always",
     }
 },
-"prettier.eslintIntegration": "true",
-"prettier.stylelintIntegration": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 "eslint.autoFixOnSave": false,
 "editor.formatOnSave": true
 }

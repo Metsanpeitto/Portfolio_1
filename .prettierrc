@@ -5,6 +5,6 @@
   "singleQuote": true,
   "rule-empty-line-before": true,
   "at-rule-no-unknown": null,
-  "scss/at-rule-no-unknown": true, 
-   "csstree/validator": true
+  "scss/at-rule-no-unknown": true,
+  "csstree/validator": true
 }
