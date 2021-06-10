@@ -69,11 +69,13 @@
       .menu {
         display: none;
       }
+
       .menu-buttons {
         display: flex;
         float: right;
         margin-top: 25px;
         margin-right: 154px;
+
         .menu-button {
           color: $gray-dark;
           font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
@@ -81,7 +83,7 @@
           font-style: normal;
           font-weight: 500;
           line-height: 20px;
-          letter-spacing: 0em;
+          letter-spacing: unset;
           text-align: center;
           text-decoration: none;
           margin-right: 32px;

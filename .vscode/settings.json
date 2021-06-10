@@ -14,8 +14,8 @@
         "at-rule-semicolon-newline-after": "always",
     }
 },
-"editor.formatOnSave": true,
-"[css]": {
-    "editor.formatOnSave": true
-}   
+"prettier.eslintIntegration": "true",
+"prettier.stylelintIntegration": true,
+"eslint.autoFixOnSave": false,
+"editor.formatOnSave": true
 }

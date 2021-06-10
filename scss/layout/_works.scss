@@ -19,6 +19,7 @@
   overflow: hidden;
   margin-bottom: 75px;
   padding-bottom: 75px;
+
   /*  main block  */
 
   .box {
@@ -218,7 +219,6 @@
 
   @media only screen and (min-width: 1024px) {
     grid-template-rows: repeat(4, 496px);
-    /* grid-template-columns: auto 1156px auto; */
     grid-row-gap: 142px;
     margin: unset;
     margin-top: 142px;
@@ -227,8 +227,8 @@
     .box {
       height: 496px;
       width: 1156px;
-      left: 0px;
-      top: 0px;
+      left: unset;
+      top: unset;
       border-radius: 24px;
       display: grid;
       grid-template-columns: 544px 544px;
@@ -253,6 +253,7 @@
 
         .text {
           height: 98px;
+
           &__breadcrumb {
             margin-top: 12px;
           }
@@ -262,9 +263,11 @@
       &__parraf {
         width: 496px;
       }
+
       &__bubbles {
         width: 100%;
       }
+
       &__action {
         .c-b-normal-button {
           position: absolute;

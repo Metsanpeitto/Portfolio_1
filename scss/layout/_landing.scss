@@ -81,13 +81,11 @@
   }
 
   .r-4 {
-width: 88px;
+    width: 88px;
     height: 93px;
     top: 32px;
     left: 311px;
-    transform: rotate(
-15deg
-);
+    transform: rotate(15deg);
   }
 
   .r-5 {
@@ -96,6 +94,7 @@ width: 88px;
     top: 653px;
     left: 187px;
   }
+
   .r-7 {
     width: 37px;
     height: 30px;
@@ -222,7 +221,6 @@ width: 88px;
       left: unset;
       grid-column-start: 2;
       grid-row-start: 3;
-      margin-left: unset;
       position: relative;
     }
 
@@ -310,7 +308,6 @@ width: 88px;
       height: 58px;
       top: 220px;
       left: 690px;
-      -webkit-transform: rotate(180);
       transform: rotate(125deg);
     }
   }
