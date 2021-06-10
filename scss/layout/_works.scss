@@ -232,7 +232,7 @@
       top: unset;
       border-radius: 24px;
       display: grid;
-      grid-template-columns: 45% 45%;
+      grid-template-columns: 50% 50%;
       grid-column-gap: 23px;
 
       &__img {
@@ -303,6 +303,8 @@
       .box {
         &__img {
           grid-column-start: 2;
+          left: unset;
+          right: 24px;
         }
 
         &__text {
