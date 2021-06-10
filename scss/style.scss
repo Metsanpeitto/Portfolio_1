@@ -91,15 +91,26 @@ h6 {
 }
 
 main {
+  background-color: white;
   display: grid;
+  grid-template-columns: 100%;
   grid-template-rows: repeat(3, auto);
   overflow-y: hidden;
   position: absolute;
   -webkit-animation: rise 0.9s ease-in-out;
   animation: rise 0.9s ease-in-out;
   max-width: 100%;
+  width: 100%;
   overflow-x: hidden;
   justify-content: center;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+}
+
+/*  Desktop values  */
+
+@media only screen and (min-width: 1024px) {
+  main {
+    background-color: #e5e5e5;
+  }
 }

@@ -30,7 +30,7 @@
     "watch": "nodemon -e scss -x 'npm run css'",
     "dev": "lite-server",
     "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
-    "fix-styles": "prettier-stylelint --write 'src/css/style.css' ",
+    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' ",
     "lint:css": "stylelint src/**/*.css --fix",
     "stylelint": "stylelint ’css/*.css’"
 

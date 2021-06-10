@@ -1,11 +1,10 @@
-# Portfolio: add a contact form and finish the mobile version
+# Portfolio: desktop version
 
 ![Alt text](images/screenshot.png?raw=true "Optional Title")
 
 ## Learning objectives
- - Create forms with HTML5 validations.
- - Understand the importance of UX.
- - Understand how to parse a Figma design to create a UI.
+- Understand  how to create UIs adaptable to different screen sizes using media queries.
+- Understand how to parse a Figma design to create a UI.
 
 =======
 
@@ -24,6 +23,16 @@ If you want a copy of this file go to the github repository and download it
 `git clone https://github.com/Metsanpeitto/Portfolio_1`
 
 After cloning it you can see the project opening the index.html file with your favorite browser ( Firefox for example )
+
+### General requirements
+
+- Make sure that there are [no linter errors](https://github.com/microverseinc/linters-config).
+- Make sure that you used correct ([Github flow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/github_flow.md).
+- Make sure that you documented your work [in a professional way](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/professional_repo_rules.md).
+
+### HTML/CSS requirements
+
+- Follow our list of [best practices for HTML & CSS](https://github.com/microverseinc/curriculum-html-css/blob/main/articles/html_css_best_practices.md).
 
 
 

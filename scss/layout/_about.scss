@@ -18,13 +18,14 @@
   grid-template-rows: 596px 500px;
   grid-row-gap: 80px;
   width: 375px;
-  background-color: transparent;
+  background-color: white;
   padding: unset;
   margin: auto;
   opacity: 1;
   position: relative;
   overflow: hidden;
   border-top-right-radius: 64px;
+  transform: translateY(75px);
 
   .social-text {
     width: 150px;
@@ -227,5 +228,104 @@
     align-self: center;
     margin-left: 10px;
     border-radius: 50%;
+  }
+
+  /*  Desktop values  */
+
+  @media only screen and (min-width: 1024px) {
+    width: 100%;
+    height: 924px;
+    padding: 142px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    transform: translateY(142px);
+
+    .about-box {
+      width: 100%;
+      margin: unset;
+      grid-column-start: 1;
+
+      .about-box-top {
+        display: grid;
+        height: 392px;
+
+        .top-title {
+          width: 200px;
+          height: 114px;
+          position: relative;
+          top: unset;
+          left: unset;
+          margin: unset;
+        }
+
+        .top-parraf {
+          grid-row-start: 2;
+          top: unset;
+          max-width: 447px;
+          width: 100%;
+          margin-bottom: unset;
+        }
+
+        .social-media {
+          position: relative;
+          grid-row-start: 3;
+          top: unset;
+          left: unset;
+          width: 100%;
+          margin-top: unset;
+        }
+
+        .c-b-normal-button {
+          position: relative;
+          top: unset;
+        }
+      }
+    }
+
+    .about-experience {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      position: relative;
+      top: unset;
+      width: 684px;
+      height: 360px;
+      grid-template-rows: 210px 75px 75px;
+
+      .experience-language {
+        width: unset;
+        height: 210px;
+        grid-row-start: 1;
+      }
+
+      .experience-group {
+        width: unset;
+
+        .languages {
+          width: 366px;
+          height: 150px;
+          align-items: unset;
+          display: grid;
+          grid-template-columns: repeat(3, 122px);
+          grid-column-gap: 12px;
+          padding-left: unset;
+
+          .language-group {
+            position: unset;
+            width: 122px;
+            height: 120px;
+            display: grid;
+
+            .language-name {
+              transform: translateY(-10px);
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .line {
+      width: 684px;
+    }
   }
 }
