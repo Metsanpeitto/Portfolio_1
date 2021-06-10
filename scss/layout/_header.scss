@@ -38,19 +38,11 @@
       opacity: 1;
       text-align: center;
       text-decoration: none;
-      animation: rotate 0.2s;
-  
+      -webkit-animation: rotate 5s;
+      animation: rotate 5s;  
     }
 
-    @keyframes rotate {
-      0% {
-        transform: rotate(0deg);
-      }
-    
-      100% {
-        transform: rotate(360deg);
-      }
-    }
+
 
     .menu {
       width: 48px;
