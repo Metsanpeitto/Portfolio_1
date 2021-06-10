@@ -232,7 +232,7 @@
 
   /*  Desktop values  */
 
-  @media only screen and (min-width: 1225px) {
+  @media only screen and (min-width: 1024px) {
     width: 100%;
     height: 924px;
     padding: 142px;
@@ -241,13 +241,12 @@
     transform: translateY(142px);
 
     .about-box {
-      width: 447px;
+      width: 100%;
       margin: unset;
       grid-column-start: 1;
 
       .about-box-top {
         display: grid;
-        width: 100%;
         height: 392px;
 
         .top-title {
@@ -263,6 +262,7 @@
           grid-row-start: 2;
           top: unset;
           max-width: 447px;
+          width: 100%;
           margin-bottom: unset;
         }
 
@@ -271,7 +271,7 @@
           grid-row-start: 3;
           top: unset;
           left: unset;
-          width: 447px;
+          width: 100%;
           margin-top: unset;
         }
 
