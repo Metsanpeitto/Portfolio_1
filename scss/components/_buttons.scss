@@ -41,8 +41,10 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $blue-4;
+  transform: scale(1);
 
-  &:hover {
+ &:hover {
+
     background-color: $blue-4;
     color: white;
   }
