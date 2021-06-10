@@ -228,11 +228,11 @@
     align-self: center;
     margin-left: 10px;
     border-radius: 50%;
-  }
+  }  
 
   /*  Desktop values  */
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1225px) {
     width: 100%;
     height: 924px;
     padding: 142px;
@@ -262,7 +262,7 @@
         .top-parraf {
           grid-row-start: 2;
           top: unset;
-          width: 447px;
+          max-width: 447px;
           margin-bottom: unset;
         }
 
