@@ -26,18 +26,21 @@
     height: 45px;
 
     .logo-text {
+      display: inline-block;
       color: $blue-4;
       width: 76px;
       height: 45px;
       position: relative;
       top: 12px;
       left: 24px;
-      font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+      font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
       font-weight: bold;
       font-size: 18px;
       opacity: 1;
       text-align: center;
       text-decoration: none;
+      -webkit-animation: rotate 0.9s ease-in-out;
+      animation: rotate 0.9s ease-in-out;
     }
 
     .menu {
@@ -62,7 +65,6 @@
 
     &__nav {
       .logo-text {
-        margin-top: 25px;
         margin-left: 155px;
       }
 
@@ -80,7 +82,7 @@
 
         .menu-button {
           color: $gray-dark;
-          font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+          font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
           font-size: 15px;
           font-style: normal;
           font-weight: 500;
