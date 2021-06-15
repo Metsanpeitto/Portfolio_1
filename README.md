@@ -1,11 +1,10 @@
-# Portfolio: application deploy
+# Portfolio: accessibility
 
 ![Alt text](images/screenshot.png?raw=true 'Optional Title')
 
 ## Learning objectives
 
-- Use GitHub Pages to deploy web pages.
-- Demonstrate ability to ask clarifying questions about ambiguous requirements.
+- Describe core principles of building accessible websites and explain why accessibility is important.
 
 ### Instructions
 
@@ -35,15 +34,29 @@ If you want a copy of this file go to the github repository and download it
 
 After cloning it you can see the project opening the index.html file with your favorite browser ( Firefox for example )
 
-### General requirements
+### Project requirements
 
-- Make sure that there are [no linter errors](https://github.com/microverseinc/linters-config).
-- Make sure that you used correct ([Github flow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/github_flow.md).
-- Make sure that you documented your work [in a professional way](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/professional_repo_rules.md).
+IMPORTANT NOTE: For each Microverse project, you need to create a separate pull request. Read how to work with multiple pull requests in your one repository in the most efficient way.
 
-### HTML/CSS requirements
-
-- Follow our list of [best practices for HTML & CSS](https://github.com/microverseinc/curriculum-html-css/blob/main/articles/html_css_best_practices.md).
+- Check all of the items listed in the article Easy Checks – A First Review of Web Accessibility (which you already read in the previous lesson).
+- Determine if your Portfolio needs any changes.
+- Prepare a report listing all points that you have checked, and the result of your evaluation.
+- Prepare a report about your evaluation:
+- List all points that you have checked, i.e:
+- Page titles
+- Image text alternatives\*\* (<img alt="alt text">)
+- Text headings
+- Color contrast
+- Resize
+- Interaction
+- Moving content
+- Multimedia
+- The basic structure of the page
+- Each point on the list needs to include the result of your evaluation:
+- If everything was ok, make a statement about that (e.g. "Page titles - no issues found").
+- If you needed to change something, link to the corresponding line of code in your Pull Request changes.
+- Add your report to the description of your pull request.
+- You need to use pair-programming for this project. Therefore you need to select one of the portfolios in your pair-programming group in which you will implement the above features.
 
 ### Prerequisites
 
