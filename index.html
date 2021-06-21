@@ -32,6 +32,20 @@
   </head>
 
   <body>
+    <script>
+      function handleClick() {
+        let menu = document.getElementsByClassName('menu-buttons')
+        let main = document.getElementsByTagName('main')
+        console.log(menu)
+        if (menu[0].style.display == 'none') {
+          menu[0].style.display = 'grid'
+          main[0].style.filter = 'blur(4px)'
+        } else {
+          menu[0].style.display = 'none'
+          main[0].style.filter = 'none'
+        }
+      }
+    </script>
     <header class="l-header">
       <!-- Navigation bar -->
 
@@ -45,7 +59,14 @@
           alt="triangle with all three sides equal"
           height="87"
           width="100"
+          onclick="handleClick()"
         />
+        <div class="menu-btn">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+
         <div class="menu-buttons">
           <a href="#landing" class="menu-button">Portfolio</a>
           <a href="#about" class="menu-button">About</a>
