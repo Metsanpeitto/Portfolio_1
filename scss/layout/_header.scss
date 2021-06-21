@@ -77,7 +77,7 @@
         flex-direction: column;
         height: 100vh;
         position: fixed;
-        top: 0vh;
+        top: 0;
         justify-content: left;
         font-size: 24px;
         animation: rise 0.5s ease-in-out;
@@ -85,7 +85,7 @@
         a {
           color: white;
           text-decoration: none;
-          font-family: 'Poppins';
+          font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
           font-size: 32px;
           font-weight: 600;
           line-height: 44px;
@@ -94,9 +94,11 @@
           &:nth-child(1) {
             grid-row-start: 2;
           }
+
           &:nth-child(2) {
             grid-row-start: 3;
           }
+
           &:nth-child(3) {
             grid-row-start: 4;
           }
