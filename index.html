@@ -32,20 +32,7 @@
   </head>
 
   <body>
-    <script>
-      function handleClick() {
-        let menu = document.getElementsByClassName('menu-buttons')
-        let main = document.getElementsByTagName('main')
-        console.log(menu)
-        if (menu[0].style.display == 'none') {
-          menu[0].style.display = 'grid'
-          main[0].style.filter = 'blur(4px)'
-        } else {
-          menu[0].style.display = 'none'
-          main[0].style.filter = 'none'
-        }
-      }
-    </script>
+    <script src="./scripts.js"></script>
     <header class="l-header">
       <!-- Navigation bar -->
 
@@ -61,6 +48,16 @@
           width="100"
           onclick="handleClick()"
         />
+
+        <img
+          class="menu-close"
+          src="./images/close.svg"
+          alt="triangle with all three sides equal"
+          height="87"
+          width="100"
+          onclick="handleClick()"
+        />
+
         <div class="menu-btn">
           <div class="line-1"></div>
           <div class="line-2"></div>

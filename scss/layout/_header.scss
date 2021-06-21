@@ -53,6 +53,20 @@
       transform: scale(1.2);
     }
 
+    .menu-close {
+      display: none;
+      grid-row-start: 1;
+      width: 20px;
+      height: 20px;
+      color: white;
+      fill: white;
+      position: relative;
+      float: right;
+      margin-top: 20px;
+      margin-right: 20px;
+      z-index: 1;
+    }
+
     @media only screen and (max-width: 1023px) {
       .menu-buttons {
         color: white;
@@ -75,9 +89,9 @@
           font-size: 32px;
           font-weight: 600;
           line-height: 44px;
-          margin-left:30px;
-          
-           &:nth-child(1) {
+          margin-left: 30px;
+
+          &:nth-child(1) {
             grid-row-start: 2;
           }
           &:nth-child(2) {
@@ -112,6 +126,12 @@
         margin-right: 154px;
         height: 45px;
         align-items: center;
+        position: relative;
+        top: -40px;
+
+        .menu-close {
+          display: none;
+        }
 
         .menu-button {
           color: $gray-dark;

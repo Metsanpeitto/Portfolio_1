@@ -1039,6 +1039,19 @@
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+.l-header__nav .menu-close {
+  display: none;
+  grid-row-start: 1;
+  width: 20px;
+  height: 20px;
+  color: white;
+  fill: white;
+  position: relative;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  z-index: 1;
+}
 @media only screen and (max-width: 1023px) {
   .l-header__nav .menu-buttons {
     color: white;
@@ -1100,6 +1113,11 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
+    top: -40px;
+  }
+  .l-header__nav .menu-buttons .menu-close {
+    display: none;
   }
   .l-header__nav .menu-buttons .menu-button {
     color: #5e6c84;
