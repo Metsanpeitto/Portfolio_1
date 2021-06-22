@@ -1,0 +1,176 @@
+/**
+* modal.scss
+*
+*  This is the modal popup that appears when one of the projects in the portfolio
+*  is selected. It Shows the details of each project and also displays couple buttons
+*  to redirect the user to the github repository and deployed version of the page.
+*/
+
+/*  Layout modal popup  */
+
+.l-modal {
+  display: block;
+  padding: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  z-index: 3;
+
+  .modal-content {
+    display: grid;
+    grid-template-rows: 45px 500px auto;
+    row-gap: 24px;
+    background-color: white;
+    border-radius: 16px;
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+
+    .modal-text {
+      background-color: white;
+      display: grid;
+      grid-template-columns: 80% 20%;
+      height: 45px;
+      position: relative;
+
+      .text {
+        position: relative;
+        display: grid;
+        grid-template-rows: 30px 30px;
+        height: 100%;
+
+        &__title {
+          height: 30px;
+        }
+
+        &__breadcrumb {
+          display: flex;
+          align-items: baseline;
+          color: $gray-light;
+
+          .breadcrumb-1 {
+            color: $gray-dark;
+            margin-right: 12px;
+          }
+
+          .dot {
+            width: 8px;
+            height: 8px;
+            background: $gray-dark;
+            opacity: 1;
+            border-radius: 50%;
+            margin-right: 12px;
+          }
+
+          .breadcrumb {
+            margin-right: 12px;
+          }
+        }
+      }
+
+      .modal-close {
+        cursor: pointer;
+        grid-column-start: 2;
+        justify-self: end;
+        width: 28px;
+        height: 28px;
+        padding: 8px;
+      }
+    }
+
+    .image-container {
+      grid-row-start: 2;
+      height: 500px;
+      background-color: $gray-light;
+      border-radius: 8px;
+      padding-left: 5%;
+      padding-right: 5%;
+
+      .image-1 {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .text-container {
+      display: grid;
+      grid-template-columns: 67.5% 30%;
+      grid-column-gap: 2.5%;
+
+      &__left {
+        .modal__parraf {
+          color: $blue-2;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 26px;
+        }
+      }
+
+      &__right {
+        display: grid;
+        grid-template-rows: auto 150px;
+        max-width: 100%;
+        overflow-x: hidden;
+
+        .modal__bubbles {
+          display: flex;
+          height: 24px;
+          opacity: 1;
+          overflow: hidden;
+          padding-left: unset;
+
+          .bubble {
+            min-width: max-content;
+            height: 24px;
+            background: #ebecf0;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding: 4px 12px;
+            opacity: 1;
+            overflow: hidden;
+            margin-right: 12px;
+
+            .bubble-text {
+              font-family: 'Poppins', sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 16px;
+              letter-spacing: 0.03em;
+              color: $blue-4;
+              margin: unset;
+            }
+          }
+        }
+
+        .modal__action {
+          border-top: 1px solid $gray-light;
+          display: flex;
+
+          button {
+            position: relative;
+            top: unset;
+            margin: 12px;
+            width: 142px;
+            height: 40px;
+
+            &:nth-child(1) {
+              margin-left: unset;
+            }
+
+            img {
+              width: 20px;
+              height: 20px;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
