@@ -91,7 +91,6 @@
           line-height: 44px;
           margin-left: 30px;
           border-bottom: none !important;
-    
 
           &:nth-child(1) {
             grid-row-start: 2;
@@ -148,8 +147,8 @@
           text-align: center;
           text-decoration: none;
           margin-right: 32px;
-          border-bottom: none ;
-          transition: border-bottom .3s ease-in-out;
+          border-bottom: none;
+          transition: border-bottom 0.3s ease-in-out;
         }
       }
     }
