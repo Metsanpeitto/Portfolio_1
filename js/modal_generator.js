@@ -6,7 +6,7 @@
  *  section and their different cards.
  * ====================================================
  */
-import * as data from './portfolio_data.js'
+import * as data from './portfolio_data.js';
 
 /**
  *  Element Generator
@@ -16,180 +16,180 @@ import * as data from './portfolio_data.js'
  *                        tag | class |content| idName
  *  ie: elementGenerator('div', 'main', null,    null )
  */
- function elementGenerator(typeName, className, content, idName) {
-  const element = document.createElement(typeName)
+function elementGenerator(typeName, className, content, idName) {
+  const element = document.createElement(typeName);
   if (className) {
-    element.className = className
+    element.className = className;
   }
   if (content) {
-    element.textContent = content
+    element.textContent = content;
   }
   if (idName) {
-    element.id = idName
+    element.id = idName;
   }
-  return element
+  return element;
 }
 
 // This is the modal generator function. It receives the id of the portfolio
 // to build from the modal_handler that calls it and gets the data to include from the
 // portfolio_data file where all the data from the portfolio is stored
 function modalGenerator(id) {
-  let portfolio
+  let portfolio;
   data.default.forEach((p) => {
     if (p.id === id) {
-      portfolio = p
+      portfolio = p;
     }
-  })
-  console.log(portfolio)
+  });
+  console.log(portfolio);
   // Get the section element 'modal' where to add the generated elements
-  const modal = document.getElementById('modal')
+  const modal = document.getElementById('modal');
   // Create a main block div 'modal-content' where to add the elements
-  const modalContent = elementGenerator('div', 'modal-content', null, null)
+  const modalContent = elementGenerator('div', 'modal-content', null, null);
 
   // Create a block div 'modal-text' where to store elements
-  const modalText = elementGenerator('div', 'modal-text', null, null)
+  const modalText = elementGenerator('div', 'modal-text', null, null);
   // Create the section 'Text' and add an element 'title'
-  const text = elementGenerator('div', 'text', null, null)
+  const text = elementGenerator('div', 'text', null, null);
   const textTitle = elementGenerator(
     'h2',
     'text__title',
     portfolio.textTitle,
-    null
-  )
+    null,
+  );
 
-  text.appendChild(textTitle)
+  text.appendChild(textTitle);
   // Create the breadcrumb group 'textBread'
-  const textBread = elementGenerator('div', 'text__breadcrumb', null, null)
+  const textBread = elementGenerator('div', 'text__breadcrumb', null, null);
   // Create the breadcrumbs 'bread' and add the content 'text'
   // To do that iterate over the different parameters of the array bread
   portfolio.bread.forEach((b, index) => {
-    let bread
-    let breadText
+    let bread;
+    let breadText;
     // For the first bread there is a dedicated class
     if (index === 0) {
-      bread = elementGenerator('div', 'breadcrumb-1', null, null)
-      breadText = elementGenerator('h5', 'breadcrumb-text-1', b, null)
-      bread.appendChild(breadText)
+      bread = elementGenerator('div', 'breadcrumb-1', null, null);
+      breadText = elementGenerator('h5', 'breadcrumb-text-1', b, null);
+      bread.appendChild(breadText);
     } else {
-      bread = elementGenerator('div', 'breadcrumb', null, null)
-      breadText = elementGenerator('h6', 'breadcrumb-text', b, null)
-      bread.appendChild(breadText)
+      bread = elementGenerator('div', 'breadcrumb', null, null);
+      breadText = elementGenerator('h6', 'breadcrumb-text', b, null);
+      bread.appendChild(breadText);
     }
     // Add the bread to the bread group
-    textBread.appendChild(bread)
+    textBread.appendChild(bread);
     // Create a dot and add it to the bread group for the 2 first 'bread'
     if (index !== 2) {
-      const dot = elementGenerator('div', 'dot', null, null)
-      textBread.appendChild(dot)
+      const dot = elementGenerator('div', 'dot', null, null);
+      textBread.appendChild(dot);
     }
-  })
+  });
 
   // Add the breadcrumb group to the section 'text'
-  text.appendChild(textBread)
+  text.appendChild(textBread);
   // Add the section 'text' to the block 'modal-text'
-  modalText.appendChild(text)
+  modalText.appendChild(text);
   // Create the img and add it to the block 'modal-text'
-  const modalImg = elementGenerator('img', 'modal-close', null, null)
-  modalImg.src = './images/close-modal.svg'
-  modalImg.alt = 'close icon'
-  modalImg.height = '87px'
-  modalImg.width = '100px'
-  modalText.appendChild(modalImg)
+  const modalImg = elementGenerator('img', 'modal-close', null, null);
+  modalImg.src = './images/close-modal.svg';
+  modalImg.alt = 'close icon';
+  modalImg.height = '87px';
+  modalImg.width = '100px';
+  modalText.appendChild(modalImg);
   // Add the block 'modalText' to the main block 'modalContent'
-  modalContent.appendChild(modalText)
+  modalContent.appendChild(modalText);
   // Create a div background image container 'image-container' and add an image
-  const imgContainer = elementGenerator('div', 'image-container', null, null)
-  const modalImage1 = elementGenerator('img', portfolio.image, null, null)
-  imgContainer.appendChild(modalImage1)
+  const imgContainer = elementGenerator('div', 'image-container', null, null);
+  const modalImage1 = elementGenerator('img', portfolio.image, null, null);
+  imgContainer.appendChild(modalImage1);
   // Add the div background image container to the main block 'modalContent'
-  modalContent.appendChild(imgContainer)
+  modalContent.appendChild(imgContainer);
 
   // Create a div block 'text-container'
-  const textContainer = elementGenerator('div', 'text-container', null, null)
+  const textContainer = elementGenerator('div', 'text-container', null, null);
   // Create a div container 'textContainerLeft'
   const textContainerLeft = elementGenerator(
     'div',
     'text-container__left',
     null,
-    null
-  )
+    null,
+  );
   // Create a parraf 'parraf' and add it to the 'textContainerLeft'
-  const parraf = elementGenerator('p', 'parraf', portfolio.parraf, null)
-  textContainerLeft.appendChild(parraf)
+  const parraf = elementGenerator('p', 'parraf', portfolio.parraf, null);
+  textContainerLeft.appendChild(parraf);
   // Add 'textContainerLeft' to the block 'textContainer;
-  textContainer.appendChild(textContainerLeft)
+  textContainer.appendChild(textContainerLeft);
 
   // Create a div container 'textContainerRight'
   const textContainerRight = elementGenerator(
     'div',
     'text-container__right',
     null,
-    null
-  )
+    null,
+  );
 
   // Create a group 'bubbles'
-  const bubbles = elementGenerator('ul', 'modal__bubbles', null, null)
+  const bubbles = elementGenerator('ul', 'modal__bubbles', null, null);
   // Iterate over the array bubbles to create each element 'bubble'
   portfolio.bubbles.forEach((b) => {
-    const bubble = elementGenerator('li', 'bubble', null, null)
+    const bubble = elementGenerator('li', 'bubble', null, null);
     // Create a text element 'bubbleText' and add it to 'bubble'
-    const bubbleText = elementGenerator('h5', 'bubble-text', b, null)
-    bubble.appendChild(bubbleText)
+    const bubbleText = elementGenerator('h5', 'bubble-text', b, null);
+    bubble.appendChild(bubbleText);
     // Add the elements 'bubble' to the group 'bubbles'
-    bubbles.appendChild(bubble)
-  })
+    bubbles.appendChild(bubble);
+  });
   // Add the group 'bubbles' to the container 'textContainerRight'
-  textContainerRight.appendChild(bubbles)
+  textContainerRight.appendChild(bubbles);
 
   // Create the division 'modalAction'
-  const modalAction = elementGenerator('div', 'modal__action', null, null)
+  const modalAction = elementGenerator('div', 'modal__action', null, null);
   // Create a button 'btn'
   const btn = elementGenerator(
     'button',
     'c-b-normal-button portfolio-btn',
     'See Live',
-    null
-  )
+    null,
+  );
   // Create an image 'liveIcon' and add it to the button
-  const liveIcon = elementGenerator('img', 'live-icon', null, null)
-  liveIcon.src = './images/live.svg'
-  liveIcon.alt = 'live icon'
-  liveIcon.height = '87px'
-  liveIcon.width = '100px'
-  btn.appendChild(liveIcon)
+  const liveIcon = elementGenerator('img', 'live-icon', null, null);
+  liveIcon.src = './images/live.svg';
+  liveIcon.alt = 'live icon';
+  liveIcon.height = '87px';
+  liveIcon.width = '100px';
+  btn.appendChild(liveIcon);
 
   // Add the 'btn' to the division 'modalAction'
-  modalAction.appendChild(btn)
+  modalAction.appendChild(btn);
 
   // Create a button 'btn2'
   const btn2 = elementGenerator(
     'button',
     'c-b-normal-button portfolio-btn',
     'See Source',
-    null
-  )
+    null,
+  );
   // Create an image 'gitIcon' and add it to the button
-  const gitIcon = elementGenerator('img', 'git-icon', null, null)
-  gitIcon.src = './images/git-blue.svg'
-  gitIcon.alt = 'git icon'
-  gitIcon.height = '87px'
-  gitIcon.width = '100px'
-  btn2.appendChild(gitIcon)
+  const gitIcon = elementGenerator('img', 'git-icon', null, null);
+  gitIcon.src = './images/git-blue.svg';
+  gitIcon.alt = 'git icon';
+  gitIcon.height = '87px';
+  gitIcon.width = '100px';
+  btn2.appendChild(gitIcon);
 
   // Add the 'btn2' to the division 'modalAction'
-  modalAction.appendChild(btn2)
+  modalAction.appendChild(btn2);
 
   // Add the division 'modalAction' to the container 'textContainerRight'
-  textContainerRight.appendChild(modalAction)
+  textContainerRight.appendChild(modalAction);
   // Add the division 'textContainerRight' to the block 'textContainer'
-  textContainer.appendChild(textContainerRight)
+  textContainer.appendChild(textContainerRight);
   // Add the block 'textContainer' to the main block 'modalContent'
-  modalContent.appendChild(textContainer)
+  modalContent.appendChild(textContainer);
   // Add the main block 'modalContent' to the section 'modal'
-  modal.appendChild(modalContent)
+  modal.appendChild(modalContent);
   // Create a div to hold a line call it 'line-shape' and add it to 'modalContent'
-  const line = elementGenerator('div', 'line-shape', null, null)
-  modal.appendChild(line)
+  const line = elementGenerator('div', 'line-shape', null, null);
+  modal.appendChild(line);
 }
 
-export default modalGenerator
+export default modalGenerator;
