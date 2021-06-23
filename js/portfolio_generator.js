@@ -12,7 +12,8 @@ import * as data from './portfolio_data.js';
  *  This function will assist in the creation of different
  *  elements. In the case of some parameters not existing
  *  it should receive null.
- *  ie: elementGenerator('div', 'main', null, null)
+ *                        tag | class |content| idName
+ *  ie: elementGenerator('div', 'main', null,    null )
  */
 function elementGenerator(typeName, className, content, idName) {
   const element = document.createElement(typeName);
@@ -94,14 +95,14 @@ function portfolioGenerator(portfolio) {
   // Create the division 'boxAction'
   const boxAction = elementGenerator('div', 'box__action', null, null);
   // Create a button 'button' and add it to the division'boxAction'
-  const button = elementGenerator(
+  const btn = elementGenerator(
     'button',
     'c-b-normal-button portfolio-btn',
     'See Project',
     portfolio.buttonId,
   );
-  button.type = button;
-  boxAction.appendChild('button');
+  btn.type = 'button';
+  boxAction.appendChild(btn);
   // Add the division 'boxAction' to the block 'boxText'
   boxText.appendChild(boxAction);
   // Add the block 'boxText' to the main block 'box'
@@ -111,12 +112,14 @@ function portfolioGenerator(portfolio) {
   li.appendChild(box);
   return li;
 }
+/**
+ * This is the main block where the code starts
+ */
 
 // Call the layout 'works' where the portfolio will be
 const works = document.getElementById('works');
 // Create a wrapper 'ul' and add in it the generated portfolios
 const ul = elementGenerator('ul', null, null, null);
-// Iterate over every portfolio and add the to the wrapper 'ul'
 const portfolio = data.default;
 portfolio.forEach((p) => {
   const generatedPortfolio = portfolioGenerator(p);

@@ -9,7 +9,7 @@
 /*  Layout modal popup  */
 
 .l-modal {
-  display: block;
+  display: none;
   padding: 5%;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -21,19 +21,19 @@
 
   .modal-content {
     display: grid;
-    grid-template-rows: 45px 500px auto;
-    row-gap: 24px;
+    grid-template-rows: 10% 36% 50%;
+    row-gap: 2%;
     background-color: white;
     border-radius: 16px;
-    height: 100%;
+    height: 90vh;
     width: 100%;
-    padding: 2%;
+    padding: 4%;
 
     .modal-text {
       background-color: white;
       display: grid;
       grid-template-columns: 80% 20%;
-      height: 45px;
+      height: 84px;
       position: relative;
 
       .text {
@@ -50,7 +50,7 @@
           display: flex;
           align-items: baseline;
           color: $gray-light;
-
+          margin-top: 22px;
           .breadcrumb-1 {
             color: $gray-dark;
             margin-right: 12px;
@@ -83,24 +83,25 @@
 
     .image-container {
       grid-row-start: 2;
-      height: 500px;
-      background-color: $gray-light;
+      height: 220px;
       border-radius: 8px;
-      padding-left: 5%;
-      padding-right: 5%;
 
-      .image-1 {
+
+      .image {
         width: 100%;
-        height: 100%;
+        height: 220px;
+        margin-top: 5%;
+        border-radius: 8px;
       }
     }
 
     .text-container {
       display: grid;
-      grid-template-columns: 67.5% 30%;
+      grid-template-rows: 60% 40%;
       grid-column-gap: 2.5%;
 
       &__left {
+        overflow-y: scroll;
         .modal__parraf {
           color: $blue-2;
           font-weight: 300;
@@ -151,7 +152,8 @@
         .modal__action {
           border-top: 1px solid $gray-light;
           display: flex;
-
+          justify-content: center;
+          padding-top: 5%;
           button {
             position: relative;
             top: unset;
@@ -167,6 +169,129 @@
               width: 20px;
               height: 20px;
               margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .modal-content {
+      display: grid;
+      grid-template-rows: 45px 500px auto;
+      row-gap: 24px;
+      background-color: white;
+      border-radius: 16px;
+      height: 100%;
+      width: 100%;
+      padding: 2%;
+      .modal-text {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        height: 45px;
+        .text {
+          position: relative;
+          display: grid;
+          grid-template-rows: 30px 30px;
+          height: 100%;
+          &__breadcrumb {
+            margin-top: unset;
+          }
+        }
+      }
+      .image-container {
+        grid-row-start: 2;
+        height: 500px;
+        background-color: $gray-light;
+        border-radius: 8px;
+        padding-left: 5%;
+        padding-right: 5%;
+
+        .image {
+          width: 100%;
+          height: 100%;
+          margin-top: unset;
+          border-radius: unset;
+        }
+      }
+
+      .text-container {
+        display: grid;
+        grid-template-columns: 67.5% 30%;
+        grid-template-rows: auto;
+        grid-column-gap: 2.5%;
+
+        &__left {
+          overflow: hidden;
+          .modal__parraf {
+            color: $blue-2;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 26px;
+          }
+        }
+
+        &__right {
+          display: grid;
+          grid-template-rows: auto auto;
+          max-width: 100%;
+          overflow: hidden;
+
+          .modal__bubbles {
+            display: flex;
+            height: 24px;
+            opacity: 1;
+            overflow: hidden;
+            padding-left: unset;
+
+            .bubble {
+              min-width: max-content;
+              height: 24px;
+              background: #ebecf0;
+              border-top-left-radius: 8px;
+              border-top-right-radius: 8px;
+              border-bottom-left-radius: 8px;
+              border-bottom-right-radius: 8px;
+              padding: 4px 12px;
+              opacity: 1;
+              overflow: hidden;
+              margin-right: 12px;
+
+              .bubble-text {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.03em;
+                color: $blue-4;
+                margin: unset;
+              }
+            }
+          }
+
+          .modal__action {
+            border-top: 1px solid $gray-light;
+            display: flex;
+            align-items: unset;
+
+            button {
+              position: relative;
+              top: unset;
+              margin: 12px;
+              width: 142px;
+              height: 40px;
+
+              &:nth-child(1) {
+                margin-left: unset;
+              }
+
+              img {
+                width: 20px;
+                height: 20px;
+                margin-left: 20px;
+              }
             }
           }
         }

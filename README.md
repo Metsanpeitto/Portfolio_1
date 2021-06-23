@@ -1,4 +1,4 @@
-# Portfolio - mobile menu
+# Portfolio: details popup window
 
 ![Alt text](images/screenshot.png?raw=true 'Optional Title')
 
@@ -7,6 +7,8 @@
 - Use basic JavaScript syntax.
 - Use JavaScript to manipulate DOM elements.
 - Use JavaScript events.
+- Understand how to parse a Figma design to create a UI.
+- Use objects to store and access data.
 
 ### Instructions
 
@@ -38,13 +40,12 @@ After cloning it you can see the project opening the index.html file with your f
 
 ### Project requirements
 
-_**IMPORTANT NOTE:** For each Microverse project, you need to create a separate pull request. [Read how to work with multiple pull requests in your one repository in the most efficient way](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/multiple_pull_requests.md)._
-
-- For this project, you should add the [JavaScript linter](https://github.com/microverseinc/linters-config/tree/master/javascript).
-- In mobile, implement the following features:
-  - When the user clicks (or taps) the hamburger button, the mobile menu appears.
-  - When the user clicks (or taps) the close (X) button, the mobile menu disappears.
-  - When the user clicks (or taps) any of the mobile menu options, the mobile menu disappears.
+- You should implement the following interactions:
+  - When the user clicks (or taps) the button to check project details, the popup with details about the project appears.
+  - When the user clicks (or taps) the close (X) button, the popup disappears.
+- You should implement popups for both mobile and desktop screen sizes:
+  - Mobile popup
+  - Desktop popup
 
 ### Prerequisites
 
