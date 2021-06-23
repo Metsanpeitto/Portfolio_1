@@ -19,36 +19,36 @@ function applyBorder(id) {
   // Sometimes it will receive a parameter with the suffix '-btn'
   // in that case there is no need to add it. So the concatenating
   // step is skipped.
-  let idBtn = id
+  let idBtn = id;
   if (!idBtn.includes('-btn')) {
-    idBtn = `${id}-btn`
+    idBtn = `${id}-btn`;
   }
   // These lines restart the style border bottom to none before assigning
   // the border style to the right one in this case.
-  document.getElementById('works-btn').style.borderBottom = 'none'
-  document.getElementById('about-btn').style.borderBottom = 'none'
-  document.getElementById('contact-btn').style.borderBottom = 'none'
-  const button = document.getElementById(idBtn)
-  button.style.borderBottom = '2px solid gray'
+  document.getElementById('works-btn').style.borderBottom = 'none';
+  document.getElementById('about-btn').style.borderBottom = 'none';
+  document.getElementById('contact-btn').style.borderBottom = 'none';
+  const button = document.getElementById(idBtn);
+  button.style.borderBottom = '2px solid gray';
 }
 
 const observer = new IntersectionObserver(
   (entries) => {
     // isIntersecting is true when element and viewport are overlapping
     // isIntersecting is false when element and viewport don't overlap
-    const elementId = entries[0].target.id
+    const elementId = entries[0].target.id;
     if (entries[0].isIntersecting === true) {
       // After knowing if the section is visible, the applyBorder function
       // will set the style propperty border bottom to the desired button.
-      applyBorder(elementId)
+      applyBorder(elementId);
     }
   },
-  { threshold: [0] }
-)
+  { threshold: [0] },
+);
 // This line uses observe to keep track of the desired sections
-observer.observe(document.querySelector('#works'))
-observer.observe(document.querySelector('#about'))
-observer.observe(document.querySelector('#contact'))
+observer.observe(document.querySelector('#works'));
+observer.observe(document.querySelector('#about'));
+observer.observe(document.querySelector('#contact'));
 
 /**
  * ====================================================
@@ -58,28 +58,28 @@ observer.observe(document.querySelector('#contact'))
  * ====================================================
  */
 function handleClickMenu() {
-  const buttons = document.getElementsByClassName('menu-buttons')
-  const menu = document.getElementsByClassName('menu')
-  const main = document.getElementsByTagName('main')
-  const close = document.getElementsByClassName('menu-close')
+  const buttons = document.getElementsByClassName('menu-buttons');
+  const menu = document.getElementsByClassName('menu');
+  const main = document.getElementsByTagName('main');
+  const close = document.getElementsByClassName('menu-close');
 
   if (buttons[0].style.display === 'grid') {
-    buttons[0].style.display = 'none'
-    main[0].style.filter = 'none'
-    close[0].style.display = 'none'
-    menu[0].style.display = 'block'
+    buttons[0].style.display = 'none';
+    main[0].style.filter = 'none';
+    close[0].style.display = 'none';
+    menu[0].style.display = 'block';
   } else {
-    buttons[0].style.display = 'grid'
-    main[0].style.filter = 'blur(4px)'
-    close[0].style.display = 'block'
-    menu[0].style.display = 'none'
+    buttons[0].style.display = 'grid';
+    main[0].style.filter = 'blur(4px)';
+    close[0].style.display = 'block';
+    menu[0].style.display = 'none';
   }
 }
 
-const menu = document.getElementsByClassName('menu')
-const menuClose = document.getElementsByClassName('menu-close')
-menu[0].addEventListener('click', handleClickMenu, false)
-menuClose[0].addEventListener('click', handleClickMenu, false)
+const menu = document.getElementsByClassName('menu');
+const menuClose = document.getElementsByClassName('menu-close');
+menu[0].addEventListener('click', handleClickMenu, false);
+menuClose[0].addEventListener('click', handleClickMenu, false);
 
 /**
  * ====================================================
@@ -93,15 +93,15 @@ menuClose[0].addEventListener('click', handleClickMenu, false)
 function handleClickButton(e) {
   // Check if 'menu-close' is being used. That means that we are
   // in the mobile version and changes should apply
-  const close = document.getElementsByClassName('menu-close')
+  const close = document.getElementsByClassName('menu-close');
   if (close[0].style.display === 'block') {
-    handleClickMenu()
+    handleClickMenu();
   } else {
-    applyBorder(e.currentTarget.id)
+    applyBorder(e.currentTarget.id);
   }
 }
 
-const buttons = document.getElementsByClassName('menu-button')
+const buttons = document.getElementsByClassName('menu-button');
 Array.from(buttons).forEach((btn) => {
-  btn.addEventListener('click', handleClickButton)
-})
+  btn.addEventListener('click', handleClickButton);
+});

@@ -40,7 +40,6 @@ function modalGenerator(id) {
       portfolio = p;
     }
   });
-  console.log(portfolio);
   // Get the section element 'modal' where to add the generated elements
   const modal = document.getElementById('modal');
   // Create a main block div 'modal-content' where to add the elements
@@ -49,17 +48,17 @@ function modalGenerator(id) {
   // Create a block div 'modal-text' where to store elements
   const modalText = elementGenerator('div', 'modal-text', null, null);
   // Create the section 'Text' and add an element 'title'
-  const text = elementGenerator('div', 'text', null, null);
+  const text = elementGenerator('div', 'text-m', null, null);
   const textTitle = elementGenerator(
     'h2',
-    'text__title',
+    'text-m__title-m',
     portfolio.textTitle,
     null,
   );
 
   text.appendChild(textTitle);
   // Create the breadcrumb group 'textBread'
-  const textBread = elementGenerator('div', 'text__breadcrumb', null, null);
+  const textBread = elementGenerator('div', 'text-m__breadcrumb-m', null, null);
   // Create the breadcrumbs 'bread' and add the content 'text'
   // To do that iterate over the different parameters of the array bread
   portfolio.bread.forEach((b, index) => {
@@ -67,19 +66,19 @@ function modalGenerator(id) {
     let breadText;
     // For the first bread there is a dedicated class
     if (index === 0) {
-      bread = elementGenerator('div', 'breadcrumb-1', null, null);
-      breadText = elementGenerator('h5', 'breadcrumb-text-1', b, null);
+      bread = elementGenerator('div', 'breadcrumb-1-m', null, null);
+      breadText = elementGenerator('h5', 'breadcrumb-text-1-m', b, null);
       bread.appendChild(breadText);
     } else {
-      bread = elementGenerator('div', 'breadcrumb', null, null);
-      breadText = elementGenerator('h6', 'breadcrumb-text', b, null);
+      bread = elementGenerator('div', 'breadcrumb-m', null, null);
+      breadText = elementGenerator('h6', 'breadcrumb-text-m', b, null);
       bread.appendChild(breadText);
     }
     // Add the bread to the bread group
     textBread.appendChild(bread);
     // Create a dot and add it to the bread group for the 2 first 'bread'
     if (index !== 2) {
-      const dot = elementGenerator('div', 'dot', null, null);
+      const dot = elementGenerator('div', 'dot-m', null, null);
       textBread.appendChild(dot);
     }
   });
@@ -99,7 +98,12 @@ function modalGenerator(id) {
   modalContent.appendChild(modalText);
   // Create a div background image container 'image-container' and add an image
   const imgContainer = elementGenerator('div', 'image-container', null, null);
-  const modalImage1 = elementGenerator('img', portfolio.image, null, null);
+  // There is a conflict when two elements are called same way but
+  // located on different files. Fix it adding '-m' so the class will change from
+  // 'image image-1' to -> 'image-m image-1'
+  let str = portfolio.image;
+  str = str.replace('image', 'image-m');
+  const modalImage1 = elementGenerator('img', str, null, null);
   imgContainer.appendChild(modalImage1);
   // Add the div background image container to the main block 'modalContent'
   modalContent.appendChild(imgContainer);
@@ -128,12 +132,12 @@ function modalGenerator(id) {
   );
 
   // Create a group 'bubbles'
-  const bubbles = elementGenerator('ul', 'modal__bubbles', null, null);
+  const bubbles = elementGenerator('ul', 'modal__bubbles-m', null, null);
   // Iterate over the array bubbles to create each element 'bubble'
   portfolio.bubbles.forEach((b) => {
-    const bubble = elementGenerator('li', 'bubble', null, null);
+    const bubble = elementGenerator('li', 'bubble-m', null, null);
     // Create a text element 'bubbleText' and add it to 'bubble'
-    const bubbleText = elementGenerator('h5', 'bubble-text', b, null);
+    const bubbleText = elementGenerator('h5', 'bubble-text-m', b, null);
     bubble.appendChild(bubbleText);
     // Add the elements 'bubble' to the group 'bubbles'
     bubbles.appendChild(bubble);
@@ -188,7 +192,7 @@ function modalGenerator(id) {
   // Add the main block 'modalContent' to the section 'modal'
   modal.appendChild(modalContent);
   // Create a div to hold a line call it 'line-shape' and add it to 'modalContent'
-  const line = elementGenerator('div', 'line-shape', null, null);
+  const line = elementGenerator('div', 'modal-shape', null, null);
   modal.appendChild(line);
 }
 

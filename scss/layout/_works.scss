@@ -138,7 +138,6 @@
         }
 
         .breadcrumb-text-1 {
-          width: 56px;
           height: 32px;
           font-weight: 600;
           font-size: 13px !important;
@@ -266,6 +265,10 @@
 
           &__breadcrumb {
             margin-top: 12px;
+
+            .breadcrumb-text-1 {
+              width: unset;
+            }
           }
         }
       }
