@@ -235,7 +235,7 @@
       grid-template-columns: 50% 50%;
       grid-column-gap: 23px;
 
-      &__img {
+      .image {
         position: relative;
         top: unset;
         left: unset;
@@ -289,7 +289,7 @@
 
     li:nth-child(odd) {
       .box {
-        &__img {
+        .image {
           grid-column-start: 1;
         }
 
@@ -310,7 +310,7 @@
 
     li:nth-child(even) {
       .box {
-        &__img {
+        .image {
           grid-column-start: 2;
           left: unset;
           right: 24px;
