@@ -8,6 +8,28 @@
  */
 import * as data from './portfolio_data.js'
 
+/**
+ *  Element Generator
+ *  This function will assist in the creation of different
+ *  elements. In the case of some parameters not existing
+ *  it should receive null.
+ *                        tag | class |content| idName
+ *  ie: elementGenerator('div', 'main', null,    null )
+ */
+ function elementGenerator(typeName, className, content, idName) {
+  const element = document.createElement(typeName)
+  if (className) {
+    element.className = className
+  }
+  if (content) {
+    element.textContent = content
+  }
+  if (idName) {
+    element.id = idName
+  }
+  return element
+}
+
 // This is the modal generator function. It receives the id of the portfolio
 // to build from the modal_handler that calls it and gets the data to include from the
 // portfolio_data file where all the data from the portfolio is stored
