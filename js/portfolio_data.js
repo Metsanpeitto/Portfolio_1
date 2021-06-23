@@ -39,6 +39,6 @@ const portfolio = [
     bubbles: ['html', 'Ruby on rails', 'css', 'javaScript'],
     buttonId: 'portfolio-4',
   },
-]
+];
 
-export default portfolio
+export default portfolio;
