@@ -1,14 +1,11 @@
-# Portfolio: details popup window
+# Portfolio: validate contact form
 
 ![Alt text](images/screenshot.png?raw=true 'Optional Title')
 
 ## Learning objectives
 
-- Use basic JavaScript syntax.
-- Use JavaScript to manipulate DOM elements.
-- Use JavaScript events.
-- Understand how to parse a Figma design to create a UI.
-- Use objects to store and access data.
+- Process user input according to business rules.
+- Use client-side validation to catch and throw errors in the UI.
 
 ### Instructions
 
@@ -40,12 +37,12 @@ After cloning it you can see the project opening the index.html file with your f
 
 ### Project requirements
 
+- You need to implement a simple validation:
+- The content of the email field has to be in lower case.
 - You should implement the following interactions:
-  - When the user clicks (or taps) the button to check project details, the popup with details about the project appears.
-  - When the user clicks (or taps) the close (X) button, the popup disappears.
-- You should implement popups for both mobile and desktop screen sizes:
-  - Mobile popup
-  - Desktop popup
+- When the user submits the form, you check if the email is in lower case.
+- If the validation is OK, the form is sent.
+- If the validation is not OK, you show an error message to the user near the submit button informing them of the error and the form is not sent.
 
 ### Prerequisites
 

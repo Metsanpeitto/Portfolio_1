@@ -55,6 +55,7 @@
                  |
                  |___1.4.6 works
 */
+
 @-webkit-keyframes rise {
   0% {
     top: 100vh;
@@ -113,6 +114,7 @@
 ******************
 
 /*   Global images  */
+
 .e-3 {
   background-image: url('../images/Ellipse-3.svg');
   background-repeat: no-repeat;
@@ -240,6 +242,7 @@
 }
 
 /*   l-works        */
+
 .image-1 {
   background: url('../images/v1_164.png');
   background-repeat: no-repeat;
@@ -269,6 +272,7 @@
 }
 
 /*   l-about        */
+
 .yellow {
   background: url('../images/yellow.svg');
   background-repeat: no-repeat;
@@ -305,6 +309,7 @@
 */
 
 /*  Component Buttons  */
+
 .c-b-normal-button {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
@@ -375,6 +380,7 @@
 * as simple and clean as possible. So the user don't have any distraction
 * or interference that could cost us lose the oportunity.
  Layout about  */
+
 .l-about {
   display: grid;
   grid-template-rows: 596px 500px;
@@ -731,6 +737,7 @@
 * - Use rounded corners, they are easier on the eyes.
 *
 */
+
 .l-contact {
   display: -webkit-box;
   display: flex;
@@ -846,7 +853,7 @@
   grid-template-rows: 48px 48px 170px;
   grid-row-start: 2;
   grid-column-start: 2;
-  grid-row-gap: 12px;
+  grid-row-gap: 28px;
   top: 50px;
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
@@ -862,16 +869,16 @@
   color: #5e6c84;
 }
 
+.l-contact form ::-webkit-input-placeholder {
+  /* Edge */
+  color: #b3bac5;
+}
+
 .l-contact form ::-moz-placeholder {
   color: #b3bac5;
 }
 
 .l-contact form ::-ms-input-placeholder {
-  color: #b3bac5;
-}
-
-.l-contact form ::-webkit-input-placeholder {
-  /* Edge */
   color: #b3bac5;
 }
 
@@ -904,6 +911,12 @@
 
 .l-contact form .input:hover {
   padding: 6px;
+}
+
+.l-contact form span {
+  color: #ffb7b7;
+  position: relative;
+  top: 5%;
 }
 
 .l-contact form .input-message {
@@ -1088,6 +1101,7 @@
 * - Logo
 * - Menu button
  layout header  */
+
 .l-header {
   background-color: #fff;
   cursor: pointer;
@@ -1255,6 +1269,7 @@
 * - Use blue color to transmit stability and confidence.
 * - Use rounded corners, they are easier on the eyes.
 /*  Layout landing  */
+
 .l-landing {
   background-color: white;
   position: static;
@@ -1575,6 +1590,7 @@
 */
 
 /*  Layout modal popup  */
+
 .l-modal {
   display: none;
   padding: 5%;
@@ -1702,7 +1718,6 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 100%;
-  justify-content: space-evenly;
   height: auto;
   opacity: 1;
   overflow: hidden;
@@ -1932,6 +1947,7 @@
 * the user and potential employes of our experience, relaiability
 * and accountability.
   Layout works  */
+
 .l-works {
   display: grid;
   grid-template-rows: repeat(4, 596px);
@@ -1954,17 +1970,17 @@
 .l-works .box {
   display: -webkit-box;
   display: flex;
-  width: 327px;
+  width: 90%;
   height: 565px;
   background: #fff;
-  margin: auto;
+  margin: 2%;
   margin-top: unset;
   margin-bottom: 80px;
   opacity: 1;
-  padding: 24px;
+  padding: 5%;
   position: relative;
   border-radius: 16px;
-  border: 1px solid #dfe1e6;
+  border: 1px solid #c1c7d0;
   overflow: hidden;
 
   /* block 1/2 - Image */
@@ -1973,7 +1989,7 @@
 }
 
 .l-works .box .image {
-  width: 295px;
+  width: 90%;
   height: 220px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1981,7 +1997,6 @@
   opacity: 1;
   position: absolute;
   top: 16px;
-  left: 16px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -1990,18 +2005,19 @@
 }
 
 .l-works .box__text {
-  width: 295px;
-  height: 288px;
+  width: 100%;
+  height: 60%;
   display: grid;
   opacity: 1;
-  position: absolute;
-  top: 248px;
-  left: 16px;
+  position: relative;
+  top: 225px;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
 }
 
 .l-works .box .text {
-  width: 295px;
+  width: 100%;
   height: 80px;
   opacity: 1;
   position: relative;
@@ -2032,6 +2048,7 @@
   position: absolute;
   top: 48px;
   overflow: hidden;
+  width: 100%;
 }
 
 .l-works .box .text__breadcrumb .breadcrumb-1 {
@@ -2069,7 +2086,7 @@
   padding: 8px;
   opacity: 1;
   overflow: hidden;
-  margin-right: 12px;
+  margin-right: 1%;
 }
 
 .l-works .box .text__breadcrumb .breadcrumb .breadcrumb-text {
@@ -2099,11 +2116,12 @@
 }
 
 .l-works .box__parraf {
-  width: 295px;
+  width: 95%;
   color: #344563;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 12px;
+  line-height: 23px;
   opacity: 1;
   text-align: left;
 }
@@ -2111,10 +2129,14 @@
 .l-works .box__bubbles {
   display: -webkit-box;
   display: flex;
-  height: 24px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: 63px;
   opacity: 1;
   overflow: hidden;
   padding-left: unset;
+  margin-top: 5%;
+  width: 90%;
 }
 
 .l-works .box__bubbles .bubble {
@@ -2145,7 +2167,7 @@
 }
 
 .l-works .box__action {
-  width: 295px;
+  width: 100%;
   height: 72px;
   -webkit-box-flex: 0;
   -ms-flex: none;
@@ -2157,7 +2179,7 @@
   flex-grow: 0;
   padding: 12px;
   padding-left: unset;
-  margin-top: 10px;
+  margin-top: unset;
 }
 
 .l-works .box__action .c-b-normal-button {
@@ -2183,6 +2205,9 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 23px;
+    padding: 24px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .l-works .box .image {
@@ -2213,7 +2238,7 @@
     left: unset;
     padding: 24px;
     width: 100%;
-    height: max-content;
+    height: 100%;
   }
 
   .l-works .box__text .text {
@@ -2231,9 +2256,13 @@
   .l-works .box__parraf {
     width: 100%;
     max-width: 496px;
+    font-size: 16px;
   }
 
   .l-works .box__bubbles {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
   }
 
@@ -2322,6 +2351,7 @@ main {
 }
 
 /*  Desktop values  */
+
 @media only screen and (min-width: 1024px) {
   main {
     background-color: #e5e5e5;
