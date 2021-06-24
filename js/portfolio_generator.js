@@ -37,7 +37,6 @@ function portfolioGenerator(portfolio) {
   box.appendChild(boxImg);
   // Create the main block 'Text'
   const boxText = elementGenerator('div', 'box__text', null, null);
-  console.log(boxText)
   // Create the section 'Text' and add an element 'title'
   const text = elementGenerator('div', 'text', null, null);
   const textTitle = elementGenerator(
@@ -118,7 +117,7 @@ function portfolioGenerator(portfolio) {
  */
 
 // Call the layout 'works' where the portfolio will be
-const works = document.getElementById('grid-container');
+const works = document.getElementById('works');
 // Create a wrapper 'ul' and add in it the generated portfolios
 const ul = elementGenerator('ul', null, null, null);
 const portfolio = data.default;

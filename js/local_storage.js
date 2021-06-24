@@ -1,0 +1,89 @@
+/**
+ *    Local Storage Function
+ *    This is the code needed to store locally the variables
+ *    and parameters used in the creation of this project
+ *
+ */
+
+// Every change that happens in the input fields will be stored into 'data' and when
+// the submit button is pressed, 'data' will be stored, always in the case that its values
+// are different from the ones stored in localStorage.
+const data = { name: null, email: null, message: null }
+
+// Every change that occurs in the fomr input fields will be parsed into the variabl 'data'
+function parseIt(v, index) {
+  let name
+  let email
+  let message
+  switch (index) {
+    case 0:
+      name = v
+      data.name = name
+      break
+    case 1:
+      email = v
+      data.email = email
+      break
+    case 2:
+      message = v
+      data.message = message
+      break
+    default:
+      break
+  }
+}
+
+// Create event listeners for every input field, so they detect any change and if submitted
+// the changes will be stored.
+const nameInput = document.getElementById('full-name')
+const email = document.getElementById('email-address')
+const message = document.getElementById('message')
+
+const elements = [nameInput, email, message]
+elements.forEach((e, index) => {
+  e.addEventListener('change', (event) => {
+    parseIt(event.target.value, index)
+  })
+})
+
+// This function checks what is inside localStorage and if it doesn't match the object that
+// we want to store, then store it.
+function storeIt() {
+  if (storageAvailable('localStorage')) {
+    const storedJson = localStorage.getItem('jsonObj')
+    const jsonObj = JSON.stringify(data)
+    if (storedJson !== jsonObj) {
+      localStorage.setItem('jsonObj', jsonObj)
+    }
+  }
+}
+
+// This function will retrieve the object stored in localStorage and populate the form fields with
+// those values.
+function retrieveIt() {
+  const storedJson = localStorage.getItem('jsonObj')
+  const values = []
+  JSON.parse(storedJson, (key, value) => {
+    values.push(value)
+  })
+
+  values.forEach((v, index) => {
+    switch (index) {
+      case 0:
+        document.getElementById('full-name').value = v
+        break
+      case 1:
+        document.getElementById('email-address').value = v
+        break
+      case 2:
+        document.getElementById('message').value = v
+        break
+      default:
+        break
+    }
+  })
+}
+// The retrieve function must to be called everytime the code runs
+retrieveIt()
+
+export default storeIt
