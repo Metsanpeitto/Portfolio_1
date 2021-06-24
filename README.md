@@ -1,11 +1,14 @@
-# Portfolio: application deploy
+# Portfolio: details popup window
 
 ![Alt text](images/screenshot.png?raw=true 'Optional Title')
 
 ## Learning objectives
 
-- Use GitHub Pages to deploy web pages.
-- Demonstrate ability to ask clarifying questions about ambiguous requirements.
+- Use basic JavaScript syntax.
+- Use JavaScript to manipulate DOM elements.
+- Use JavaScript events.
+- Understand how to parse a Figma design to create a UI.
+- Use objects to store and access data.
 
 ### Instructions
 
@@ -35,15 +38,14 @@ If you want a copy of this file go to the github repository and download it
 
 After cloning it you can see the project opening the index.html file with your favorite browser ( Firefox for example )
 
-### General requirements
+### Project requirements
 
-- Make sure that there are [no linter errors](https://github.com/microverseinc/linters-config).
-- Make sure that you used correct ([Github flow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/github_flow.md).
-- Make sure that you documented your work [in a professional way](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/professional_repo_rules.md).
-
-### HTML/CSS requirements
-
-- Follow our list of [best practices for HTML & CSS](https://github.com/microverseinc/curriculum-html-css/blob/main/articles/html_css_best_practices.md).
+- You should implement the following interactions:
+  - When the user clicks (or taps) the button to check project details, the popup with details about the project appears.
+  - When the user clicks (or taps) the close (X) button, the popup disappears.
+- You should implement popups for both mobile and desktop screen sizes:
+  - Mobile popup
+  - Desktop popup
 
 ### Prerequisites
 

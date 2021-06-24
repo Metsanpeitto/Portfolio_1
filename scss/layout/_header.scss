@@ -16,7 +16,7 @@
   height: 45px;
   position: fixed;
   top: 0%;
-  z-index: 10;
+  z-index: 3;
 
   /* main block  -  Navigation  */
 
@@ -27,7 +27,7 @@
 
     .logo-text {
       display: inline-block;
-      color: $blue-4;
+      color: $blue-8;
       width: 76px;
       height: 45px;
       position: relative;
@@ -53,8 +53,58 @@
       transform: scale(1.2);
     }
 
-    .menu-buttons {
+    .menu-close {
       display: none;
+      grid-row-start: 1;
+      width: 20px;
+      height: 20px;
+      color: white;
+      fill: white;
+      position: relative;
+      float: right;
+      margin-top: 20px;
+      margin-right: 20px;
+      z-index: 1;
+    }
+
+    @media only screen and (max-width: 1023px) {
+      .menu-buttons {
+        color: white;
+        display: none;
+        grid-template-rows: 10vh 10vh 10vh 10vh;
+        background-color: #0000ff94;
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        justify-content: left;
+        font-size: 24px;
+        animation: rise 0.5s ease-in-out;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
+          font-size: 32px;
+          font-weight: 600;
+          line-height: 44px;
+          margin-left: 30px;
+          border-bottom: none !important;
+
+          &:nth-child(1) {
+            grid-row-start: 2;
+          }
+
+          &:nth-child(2) {
+            grid-row-start: 3;
+          }
+
+          &:nth-child(3) {
+            grid-row-start: 4;
+          }
+        }
+      }
     }
   }
 
@@ -79,6 +129,12 @@
         margin-right: 154px;
         height: 45px;
         align-items: center;
+        position: relative;
+        top: -40px;
+
+        .menu-close {
+          display: none;
+        }
 
         .menu-button {
           color: $gray-dark;
@@ -91,6 +147,8 @@
           text-align: center;
           text-decoration: none;
           margin-right: 32px;
+          border-bottom: none;
+          transition: border-bottom 0.3s ease-in-out;
         }
       }
     }
