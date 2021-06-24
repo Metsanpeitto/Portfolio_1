@@ -37,7 +37,6 @@ function portfolioGenerator(portfolio) {
   box.appendChild(boxImg);
   // Create the main block 'Text'
   const boxText = elementGenerator('div', 'box__text', null, null);
-  console.log(boxText)
   // Create the section 'Text' and add an element 'title'
   const text = elementGenerator('div', 'text', null, null);
   const textTitle = elementGenerator(
