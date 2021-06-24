@@ -97,8 +97,8 @@
 
     .text-container {
       display: grid;
-      grid-template-rows: 60% 40%;
       grid-column-gap: 2.5%;
+      padding-top: 21%;
 
       &__left {
         overflow-y: scroll;
@@ -112,14 +112,18 @@
       }
 
       &__right {
-        display: grid;
-        grid-template-rows: auto 150px;
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: auto auto;
         max-width: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
 
         .modal__bubbles-m {
           display: flex;
-          height: 24px;
+          flex-wrap: wrap;
+          max-width: 100%;
+          justify-content: space-evenly;
+          height: auto;
           opacity: 1;
           overflow: hidden;
           padding-left: unset;
@@ -136,6 +140,7 @@
             opacity: 1;
             overflow: hidden;
             margin-right: 12px;
+            margin-top: 12px;
 
             .bubble-text-m {
               font-family: 'Poppins', sans-serif;
@@ -159,9 +164,9 @@
           button {
             position: relative;
             top: unset;
-            margin: 12px;
-            width: 142px;
+            margin: 4px;
             height: 40px;
+            font-size: 14px;
 
             &:nth-child(1) {
               margin-left: unset;
@@ -170,7 +175,7 @@
             img {
               width: 20px;
               height: 20px;
-              margin-left: 20px;
+              margin-left: 4px;
             }
           }
         }
@@ -192,7 +197,7 @@
   @media only screen and (min-width: 1024px) {
     .modal-content {
       display: grid;
-      grid-template-rows: 45px 500px auto;
+      grid-template-rows: 45px 400px auto;
       row-gap: 24px;
       background-color: white;
       border-radius: 16px;
@@ -219,7 +224,7 @@
 
       .image-container {
         grid-row-start: 2;
-        height: 500px;
+        height: 400px;
         background-color: $gray-light;
         border-radius: 8px;
         padding-left: 5%;
@@ -235,9 +240,10 @@
 
       .text-container {
         display: grid;
-        grid-template-columns: 67.5% 30%;
+        grid-template-columns: auto auto;
         grid-template-rows: auto;
         grid-column-gap: 2.5%;
+        padding-top: unset;
 
         &__left {
           overflow: hidden;

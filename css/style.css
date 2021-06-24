@@ -55,7 +55,6 @@
                  |
                  |___1.4.6 works
 */
-
 @-webkit-keyframes rise {
   0% {
     top: 100vh;
@@ -114,7 +113,6 @@
 ******************
 
 /*   Global images  */
-
 .e-3 {
   background-image: url('../images/Ellipse-3.svg');
   background-repeat: no-repeat;
@@ -242,7 +240,6 @@
 }
 
 /*   l-works        */
-
 .image-1 {
   background: url('../images/v1_164.png');
   background-repeat: no-repeat;
@@ -272,7 +269,6 @@
 }
 
 /*   l-about        */
-
 .yellow {
   background: url('../images/yellow.svg');
   background-repeat: no-repeat;
@@ -309,7 +305,6 @@
 */
 
 /*  Component Buttons  */
-
 .c-b-normal-button {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
@@ -320,6 +315,7 @@
   opacity: 1;
   top: 216px;
   overflow: hidden;
+  display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -379,7 +375,6 @@
 * as simple and clean as possible. So the user don't have any distraction
 * or interference that could cost us lose the oportunity.
  Layout about  */
-
 .l-about {
   display: grid;
   grid-template-rows: 596px 500px;
@@ -414,6 +409,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
   display: flex;
   width: 200px;
   height: 40px;
@@ -430,6 +426,7 @@
 }
 
 .l-about .about-box {
+  display: -webkit-box;
   display: flex;
   height: 625px;
   width: 375px;
@@ -445,9 +442,11 @@
 .l-about .about-box-top button {
   top: 320px;
   position: relative;
+  margin-top: 12px;
 }
 
 .l-about .about-box-top .top-title {
+  display: -webkit-box;
   display: flex;
   width: 50%;
   height: 100px;
@@ -537,6 +536,7 @@
 }
 
 .l-about .experience-group .languages {
+  display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -552,6 +552,7 @@
 }
 
 .l-about .experience-group .languages .language-group {
+  display: -webkit-box;
   display: flex;
   background: #f7f7f9;
   height: 66.7155990601px;
@@ -663,6 +664,7 @@
   .l-about .about-box .about-box-top .c-b-normal-button {
     position: relative;
     top: unset;
+    margin-top: unset;
   }
 
   .l-about .about-experience {
@@ -729,8 +731,8 @@
 * - Use rounded corners, they are easier on the eyes.
 *
 */
-
 .l-contact {
+  display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -824,6 +826,7 @@
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
+  display: -webkit-box;
   display: flex;
   margin: auto;
 }
@@ -859,12 +862,16 @@
   color: #5e6c84;
 }
 
-.l-contact form ::-webkit-input-placeholder {
-  /* Edge */
+.l-contact form ::-moz-placeholder {
   color: #b3bac5;
 }
 
 .l-contact form ::-ms-input-placeholder {
+  color: #b3bac5;
+}
+
+.l-contact form ::-webkit-input-placeholder {
+  /* Edge */
   color: #b3bac5;
 }
 
@@ -961,6 +968,8 @@
 
   .l-contact__text {
     width: 800px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -1079,7 +1088,6 @@
 * - Logo
 * - Menu button
  layout header  */
-
 .l-header {
   background-color: #fff;
   cursor: pointer;
@@ -1247,7 +1255,6 @@
 * - Use blue color to transmit stability and confidence.
 * - Use rounded corners, they are easier on the eyes.
 /*  Layout landing  */
-
 .l-landing {
   background-color: white;
   position: static;
@@ -1406,6 +1413,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
   display: flex;
   width: 200px;
   height: 40px;
@@ -1567,7 +1575,6 @@
 */
 
 /*  Layout modal popup  */
-
 .l-modal {
   display: none;
   padding: 5%;
@@ -1611,6 +1618,7 @@
 }
 
 .l-modal .modal-content .modal-text .text-m__breadcrumb-m {
+  display: -webkit-box;
   display: flex;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
@@ -1661,8 +1669,8 @@
 
 .l-modal .modal-content .text-container {
   display: grid;
-  grid-template-rows: 60% 40%;
   grid-column-gap: 2.5%;
+  padding-top: 21%;
 }
 
 .l-modal .modal-content .text-container__left {
@@ -1677,15 +1685,25 @@
 }
 
 .l-modal .modal-content .text-container__right {
-  display: grid;
-  grid-template-rows: auto 150px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-template-rows: auto auto;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .l-modal .modal-content .text-container__right .modal__bubbles-m {
+  display: -webkit-box;
   display: flex;
-  height: 24px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-evenly;
+  height: auto;
   opacity: 1;
   overflow: hidden;
   padding-left: unset;
@@ -1705,6 +1723,7 @@
   opacity: 1;
   overflow: hidden;
   margin-right: 12px;
+  margin-top: 12px;
 }
 
 .l-modal .modal-content .text-container__right .modal__bubbles-m .bubble-m .bubble-text-m {
@@ -1720,7 +1739,10 @@
 
 .l-modal .modal-content .text-container__right .modal__action {
   border-top: 1px solid #c1c7d0;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-top: 5%;
 }
@@ -1728,9 +1750,9 @@
 .l-modal .modal-content .text-container__right .modal__action button {
   position: relative;
   top: unset;
-  margin: 12px;
-  width: 142px;
+  margin: 4px;
   height: 40px;
+  font-size: 14px;
 }
 
 .l-modal .modal-content .text-container__right .modal__action button:nth-child(1) {
@@ -1740,7 +1762,7 @@
 .l-modal .modal-content .text-container__right .modal__action button img {
   width: 20px;
   height: 20px;
-  margin-left: 20px;
+  margin-left: 4px;
 }
 
 .l-modal .modal-shape {
@@ -1757,7 +1779,7 @@
 @media only screen and (min-width: 1024px) {
   .l-modal .modal-content {
     display: grid;
-    grid-template-rows: 45px 500px auto;
+    grid-template-rows: 45px 400px auto;
     row-gap: 24px;
     background-color: white;
     border-radius: 16px;
@@ -1785,7 +1807,7 @@
 
   .l-modal .modal-content .image-container {
     grid-row-start: 2;
-    height: 500px;
+    height: 400px;
     background-color: #c1c7d0;
     border-radius: 8px;
     padding-left: 5%;
@@ -1801,9 +1823,10 @@
 
   .l-modal .modal-content .text-container {
     display: grid;
-    grid-template-columns: 67.5% 30%;
+    grid-template-columns: auto auto;
     grid-template-rows: auto;
     grid-column-gap: 2.5%;
+    padding-top: unset;
   }
 
   .l-modal .modal-content .text-container__left {
@@ -1909,7 +1932,6 @@
 * the user and potential employes of our experience, relaiability
 * and accountability.
   Layout works  */
-
 .l-works {
   display: grid;
   grid-template-rows: repeat(4, 596px);
@@ -1930,6 +1952,7 @@
 }
 
 .l-works .box {
+  display: -webkit-box;
   display: flex;
   width: 327px;
   height: 565px;
@@ -2003,6 +2026,7 @@
   -ms-flex-align: center;
   align-items: center;
   height: 32px;
+  display: -webkit-box;
   display: flex;
   opacity: 1;
   position: absolute;
@@ -2040,6 +2064,7 @@
   width: -moz-fit-content;
   width: fit-content;
   height: 32px;
+  display: -webkit-box;
   display: flex;
   padding: 8px;
   opacity: 1;
@@ -2084,6 +2109,7 @@
 }
 
 .l-works .box__bubbles {
+  display: -webkit-box;
   display: flex;
   height: 24px;
   opacity: 1;
@@ -2286,6 +2312,8 @@ main {
   max-width: 100%;
   width: 100%;
   overflow-x: hidden;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -2294,7 +2322,6 @@ main {
 }
 
 /*  Desktop values  */
-
 @media only screen and (min-width: 1024px) {
   main {
     background-color: #e5e5e5;
