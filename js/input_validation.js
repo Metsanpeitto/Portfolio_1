@@ -11,6 +11,11 @@ alertMessage.textContent = 'The email can be only in lowercase';
 contactForm.addEventListener('submit', (e) => {
   if (email.value.toLowerCase() !== email.value) {
     e.preventDefault();
-    email.parentNode.insertBefore(alertMessage, email.nextSibling);
+    document
+      .getElementById('message')
+      .parentNode.insertBefore(
+        alertMessage,
+        document.getElementById('message').nextSibling,
+      );
   }
 });

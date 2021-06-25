@@ -117,7 +117,7 @@ function portfolioGenerator(portfolio) {
  */
 
 // Call the layout 'works' where the portfolio will be
-const works = document.getElementById('grid-container');
+const works = document.getElementById('works');
 // Create a wrapper 'ul' and add in it the generated portfolios
 const ul = elementGenerator('ul', null, null, null);
 const portfolio = data.default;
