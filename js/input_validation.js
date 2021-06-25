@@ -8,6 +8,7 @@
 
 import storeIt from './local_storage.js';
 
+
 const contactForm = document.getElementById('form');
 const email = document.getElementById('email-address');
 const alertMessage = document.createElement('span');
@@ -19,5 +20,11 @@ contactForm.addEventListener('submit', (e) => {
     email.parentNode.insertBefore(alertMessage, email.nextSibling);
   } else {
     storeIt();
+    document
+      .getElementById('message')
+      .parentNode.insertBefore(
+        alertMessage,
+        document.getElementById('message').nextSibling,
+      );
   }
 });

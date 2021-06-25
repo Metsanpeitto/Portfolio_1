@@ -55,7 +55,6 @@
                  |
                  |___1.4.6 works
 */
-
 @-webkit-keyframes rise {
   0% {
     top: 100vh;
@@ -114,7 +113,6 @@
 ******************
 
 /*   Global images  */
-
 .e-3 {
   background-image: url('../images/Ellipse-3.svg');
   background-repeat: no-repeat;
@@ -242,7 +240,6 @@
 }
 
 /*   l-works        */
-
 .image-1 {
   background: url('../images/v1_164.png');
   background-repeat: no-repeat;
@@ -272,7 +269,6 @@
 }
 
 /*   l-about        */
-
 .yellow {
   background: url('../images/yellow.svg');
   background-repeat: no-repeat;
@@ -309,7 +305,6 @@
 */
 
 /*  Component Buttons  */
-
 .c-b-normal-button {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
@@ -380,7 +375,6 @@
 * as simple and clean as possible. So the user don't have any distraction
 * or interference that could cost us lose the oportunity.
  Layout about  */
-
 .l-about {
   display: grid;
   grid-template-rows: 596px 500px;
@@ -737,7 +731,6 @@
 * - Use rounded corners, they are easier on the eyes.
 *
 */
-
 .l-contact {
   display: -webkit-box;
   display: flex;
@@ -914,9 +907,8 @@
 }
 
 .l-contact form span {
-  color: #ffb7b7;
+  color: #ffb7e7;
   position: relative;
-  top: 5%;
 }
 
 .l-contact form .input-message {
@@ -981,8 +973,6 @@
 
   .l-contact__text {
     width: 800px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -1101,7 +1091,6 @@
 * - Logo
 * - Menu button
  layout header  */
-
 .l-header {
   background-color: #fff;
   cursor: pointer;
@@ -1269,7 +1258,6 @@
 * - Use blue color to transmit stability and confidence.
 * - Use rounded corners, they are easier on the eyes.
 /*  Layout landing  */
-
 .l-landing {
   background-color: white;
   position: static;
@@ -1590,7 +1578,6 @@
 */
 
 /*  Layout modal popup  */
-
 .l-modal {
   display: none;
   padding: 5%;
@@ -1718,6 +1705,7 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 100%;
+  justify-content: space-evenly;
   height: auto;
   opacity: 1;
   overflow: hidden;
@@ -1756,8 +1744,6 @@
   border-top: 1px solid #c1c7d0;
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   padding-top: 5%;
 }
@@ -1947,7 +1933,6 @@
 * the user and potential employes of our experience, relaiability
 * and accountability.
   Layout works  */
-
 .l-works {
   display: grid;
   grid-template-rows: repeat(4, 596px);
@@ -2341,8 +2326,6 @@ main {
   max-width: 100%;
   width: 100%;
   overflow-x: hidden;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -2351,7 +2334,6 @@ main {
 }
 
 /*  Desktop values  */
-
 @media only screen and (min-width: 1024px) {
   main {
     background-color: #e5e5e5;
