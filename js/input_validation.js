@@ -3,6 +3,11 @@
  *   It checks that only lowercase is being typed into
  *   the email input of the contact form.
  */
+// If the form is correctly filled the function storeIt is called
+// to proceed with the storage of the form parameters
+
+import storeIt from './local_storage.js';
+
 const contactForm = document.getElementById('form');
 const email = document.getElementById('email-address');
 const alertMessage = document.createElement('span');
@@ -17,5 +22,7 @@ contactForm.addEventListener('submit', (e) => {
         alertMessage,
         document.getElementById('message').nextSibling,
       );
+  } else {
+    storeIt();
   }
 });
