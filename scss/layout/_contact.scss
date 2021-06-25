@@ -114,7 +114,7 @@
     grid-template-rows: 48px 48px 170px;
     grid-row-start: 2;
     grid-column-start: 2;
-    grid-row-gap: 12px;
+    grid-row-gap: 28px;
     top: 50px;
     order: 2;
     float: initial;
@@ -159,6 +159,11 @@
       &:hover {
         padding: 6px;
       }
+    }
+
+    span {
+      color: #ffb7b7;
+      position: relative;
     }
 
     .input-message {

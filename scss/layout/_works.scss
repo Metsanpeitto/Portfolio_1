@@ -24,23 +24,23 @@
 
   .box {
     display: flex;
-    width: 327px;
+    width: 90%;
     height: 565px;
     background: #fff;
-    margin: auto;
+    margin: 2%;
     margin-top: unset;
     margin-bottom: 80px;
     opacity: 1;
-    padding: 24px;
+    padding: 5%;
     position: relative;
     border-radius: 16px;
-    border: 1px solid #dfe1e6;
+    border: 1px solid $gray-light;
     overflow: hidden;
 
     /* block 1/2 - Image */
 
     .image {
-      width: 295px;
+      width: 90%;
       height: 220px;
       background-repeat: no-repeat;
       background-position: center center;
@@ -48,7 +48,6 @@
       opacity: 1;
       position: absolute;
       top: 16px;
-      left: 16px;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       border-bottom-left-radius: 8px;
@@ -59,18 +58,19 @@
     /* block 2/2 - Text */
 
     &__text {
-      width: 295px;
-      height: 288px;
+      width: 100%;
+      height: 60%;
       display: grid;
       opacity: 1;
-      position: absolute;
-      top: 248px;
-      left: 16px;
+      position: relative;
+      top: 225px;
+      margin-left: auto;
+      margin-right: auto;
       overflow: hidden;
     }
 
     .text {
-      width: 295px;
+      width: 100%;
       height: 80px;
       opacity: 1;
       position: relative;
@@ -97,6 +97,7 @@
         position: absolute;
         top: 48px;
         overflow: hidden;
+        width: 100%;
 
         .breadcrumb-1 {
           align-items: center;
@@ -124,7 +125,7 @@
           padding: 8px;
           opacity: 1;
           overflow: hidden;
-          margin-right: 12px;
+          margin-right: 1%;
 
           .breadcrumb-text {
             font-family: 'Poppins', sans-serif;
@@ -156,21 +157,25 @@
     }
 
     &__parraf {
-      width: 295px;
+      width: 95%;
       color: $blue-2;
       font-family: 'Poppins', sans-serif;
       font-weight: 400;
-      font-size: 15px;
+      font-size: 12px;
+      line-height: 23px;
       opacity: 1;
       text-align: left;
     }
 
     &__bubbles {
       display: flex;
-      height: 24px;
+      flex-wrap: wrap;
+      min-height: 63px;
       opacity: 1;
       overflow: hidden;
       padding-left: unset;
+      margin-top: 5%;
+      width: 90%;
 
       .bubble {
         min-width: max-content;
@@ -199,14 +204,14 @@
     }
 
     &__action {
-      width: 295px;
+      width: 100%;
       height: 72px;
       flex: none;
       order: 3;
       flex-grow: 0;
       padding: 12px;
       padding-left: unset;
-      margin-top: 10px;
+      margin-top: unset;
 
       .c-b-normal-button {
         top: unset;
@@ -233,6 +238,9 @@
       display: grid;
       grid-template-columns: 50% 50%;
       grid-column-gap: 23px;
+      padding: 24px;
+      margin-right: auto;
+      margin-left: auto;
 
       .image {
         position: relative;
@@ -258,7 +266,7 @@
         left: unset;
         padding: 24px;
         width: 100%;
-        height: max-content;
+        height: 100%;
 
         .text {
           height: 98px;
@@ -276,9 +284,11 @@
       &__parraf {
         width: 100%;
         max-width: 496px;
+        font-size: 16px;
       }
 
       &__bubbles {
+        align-items: center;
         width: 100%;
       }
 
